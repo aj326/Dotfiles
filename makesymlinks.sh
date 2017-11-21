@@ -2,6 +2,7 @@
 ############################
 # .make.sh
 # This script creates symlinks from the home directory to any desired dotfiles in ~/dotfiles
+# Slightly edited version of https://github.com/michaeljsmalley/dotfiles/blob/master/makesymlinks.sh
 ############################
 
 ########## Variables

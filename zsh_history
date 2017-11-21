@@ -94,3 +94,10 @@
 : 1511231139:0;cd dotfiles
 : 1511231141:0;git init
 : 1511231144:0;git add .
+: 1511231153:0;git commit -m "first"
+: 1511231169:0;git remote add origin https://github.com/aj326/Dotfiles.git
+: 1511231175:0;git push -u origin master
+: 1511231307:0;git remote set-url origin git@github.com:aj326/Dotfiles.git
+: 1511231327:0;la
+: 1511231348:0;vim makesymlinks.sh
+: 1511231377:0;git add .
