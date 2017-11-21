@@ -1,0 +1,1 @@
+/home/aj/.zplug/repos/b4b4r07/hello_bitbucket/hello.sh

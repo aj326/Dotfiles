@@ -1,0 +1,96 @@
+: 1511229724:0;la
+: 1511229761:0;cd dotfiles
+: 1511229762:0;ls
+: 1511229768:0;git init
+: 1511229770:0;ga
+: 1511229775:0;ga .
+: 1511229795:0;cd
+: 1511229796:0;ls
+: 1511229797:0;la
+: 1511229859:0;ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+: 1511229866:0;pacins ssh
+: 1511229872:0;pacins ssh-keygen
+: 1511229878:0;search ssh-keygen
+: 1511229884:0;search ssh
+: 1511229922:0;pacins openssh
+: 1511229926:0;pacins open-ssh
+: 1511229949:0;alias | grep pacman
+: 1511229965:0;pacin open-ssh
+: 1511229979:0;sudo aura -Ss open-ssh
+: 1511229986:0;sudo aura -Ss ssh
+: 1511229995:0;sudo aura -Ss openssh
+: 1511230001:0;sudo aura -S openssh
+: 1511230008:0;ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+: 1511230036:0;ssh-keygen -t rsa -b 4096 -C "ahmed.jehairan@gmail.com"
+: 1511230068:0;eval "$(ssh-agent -s)"
+: 1511230092:0;ssh-add ~/.ssh/id_rsa.rsa\
+
+: 1511230099:0;ssh-add ~/.ssh/id_rsa\
+
+: 1511230119:0;pacin xclip
+: 1511230130:0; xclip -sel clip < ~/.ssh/id_rsa.pub
+: 1511230316:0;cat dotfiles/makesymlinks.sh
+: 1511230368:0;cd dotfiles
+: 1511230378:0;git commit -m "first\
+\
+"
+: 1511230387:0;git commit -m "first"
+: 1511230414:0;git config --global user.email ahmed.jehairan@gmail.com
+: 1511230461:0;git config --global user.name  Ahmed Jehairan
+: 1511230468:0;git commit -m "first"
+: 1511230474:0;la
+: 1511230486:0;./makesymlinks.sh
+: 1511230505:0;cd
+: 1511230510:0;mv .fonts .fonts~
+: 1511230527:0;mv .zplug .zplug~
+: 1511230568:0;mv .emacs.d .emacs.d~
+: 1511230601:0;cp .fonts~ dotfiles/fonts
+: 1511230607:0;cp -r .fonts~ dotfiles/fonts
+: 1511230622:0;cp -r .zplug\~ dotfiles/zplug
+: 1511230638:0;cp -r .emacs.d\~ dotfiles/emacs.d
+: 1511230646:0;./makesymlinks.sh
+: 1511230651:0;./dotfiles/makesymlinks.sh
+: 1511230672:0;la ~
+: 1511230685:0;la ~/.zplug
+: 1511230699:0;la dotfiles/emacs.d
+: 1511230728:0;la
+: 1511230734:0;cd dotfiles
+: 1511230734:0;ls
+: 1511230739:0;cd 
+: 1511230746:0;la dotfiles_old
+: 1511230758:0;vim dotfiles/makesymlinks.sh
+: 1511230799:0;cd dotfiles
+: 1511230800:0;la
+: 1511230803:0;rm emacs.d
+: 1511230806:0;rm fonts
+: 1511230810:0;rm zplug
+: 1511230844:0;cp -r ../dotfiles_old/.emacs.d/ 
+: 1511230848:0;cp -r ../dotfiles_old/.emacs.d/ .
+: 1511230871:0;cp -r ../dotfiles_old/.fonts/ .
+: 1511230876:0;cp -r ../dotfiles_old/.zplug/ .
+: 1511230886:0;./makesymlinks.sh
+: 1511230895:0;la
+: 1511230908:0;cd ..
+: 1511230918:0;rm -rf .emacs.d .fonts .zplug
+: 1511230924:0;cd dotfiles
+: 1511230929:0;mv .emacs.d .emacs.d
+: 1511230934:0;mv .emacs.d emacs.d
+: 1511230941:0;mv .fonts fonts
+: 1511230946:0;mv .zplug zplug
+: 1511230951:0;./makesymlinks.sh
+: 1511230970:0;la ~
+: 1511230976:0;cd
+: 1511230990:0;rm -rf .zplug~ .emacs.d\~ .fonts\~
+: 1511231000:0;la dotfiles/zplug
+: 1511231005:0;la dotfiles/emacs.d
+: 1511231018:0;la dotfiles
+: 1511231032:0;cd dotfiles
+: 1511231034:0;ga .
+: 1511231040:0;gc
+: 1511231092:0;rm -rf .git
+: 1511231094:0;cd ..
+: 1511231094:0;la
+: 1511231127:0;emacs
+: 1511231139:0;cd dotfiles
+: 1511231141:0;git init
+: 1511231144:0;git add .

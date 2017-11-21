@@ -1,0 +1,17 @@
+hcgraf/zsh-sudo
+Jxck/dotfiles, as:command use:bin/{histuniq,color}
+plugins/alias-tips, from:oh-my-zsh
+plugins/archlinux, from:oh-my-zsh
+plugins/command-not-found, from:oh-my-zsh
+plugins/common-aliases, from:oh-my-zsh
+plugins/git, from:oh-my-zsh
+srijanshetty/zsh-pip-completion
+themes/agnoster, from:oh-my-zsh
+unixorn/warhol.plugin.zsh
+zlsun/solarized-man
+zplug/zplug, hook-build:zplug --self-manage
+~/.zsh, from:local
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-completions
+zsh-users/zsh-history-substring-search
+zsh-users/zsh-syntax-highlighting, defer:2

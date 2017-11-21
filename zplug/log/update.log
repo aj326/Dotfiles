@@ -1,0 +1,17 @@
+repo:~/.zsh	status:16
+repo:joel-porquet/zsh-dircolors-solarized.git	status:13
+repo:srijanshetty/zsh-pip-completion	status:10
+repo:zsh-users/zsh-completions	status:10
+repo:zsh-users/zsh-autosuggestions	status:10
+repo:zsh-users/zsh-syntax-highlighting	status:10
+repo:zlsun/solarized-man	status:10
+repo:zsh-users/zsh-history-substring-search	status:10
+repo:zplug/zplug	status:10
+repo:hcgraf/zsh-sudo	status:10
+repo:Jxck/dotfiles	status:10
+repo:plugins/archlinux	status:10
+repo:themes/agnoster	status:10
+repo:plugins/command-not-found	status:10
+repo:plugins/common-aliases	status:10
+repo:plugins/alias-tips	status:10
+repo:plugins/git	status:10
