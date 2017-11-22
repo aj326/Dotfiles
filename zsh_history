@@ -144,3 +144,195 @@
 : 1511369678:0;vim vimrc
 : 1511369683:0;vimpager spacemacs
 : 1511369702:0;ga .
+: 1511369708:0;alias | grep git
+: 1511369737:0;gc
+: 1511369767:0;gp
+: 1511369800:0;vimpager zshrc
+: 1511369814:0;$PAGER 
+: 1511369818:0;echo $PAGER
+: 1511369910:0;(( $+commands[vimpager] ))
+: 1511369918:0;which vimpage
+: 1511369920:0;which vimpager
+: 1511369959:0;which vimpager &> /dev/null
+: 1511370037:0;sudo pacman -Rscs vimpager
+: 1511370210:0;cd ..
+: 1511370214:0;ls
+: 1511370221:0;cd .emacs.d
+: 1511370222:0;la
+: 1511370234:0;git pull --rebase
+: 1511370301:0;calc
+: 1511370308:0;pacin calc
+: 1511370311:0;calc
+: 1511370581:0;sudo lsblk -D
+: 1511370637:0;pacin yank
+: 1511370645:0;search yank
+: 1511370659:0;sudo pacman -Ss yank
+: 1511370686:0;sudo aura -Akuaxv yank
+: 1511370701:0;ls | yank
+: 1511370714:0;echo | xclip
+: 1511370753:0;ls | yank
+: 1511370762:0;ls | yank -l
+: 1511370861:0;sudo aura -Au
+: 1511370875:0;sudo aura -A
+: 1511370878:0;sudo aura -Au
+: 1511370894:0;sudo bauerbill -Syu --aur
+: 1511370915:0;sudo bauerbill -Syu
+: 1511370984:0;pacin minidlna
+: 1511370997:0;sudo updatedb
+: 1511376792:0;calc
+: 1511378935:0;man-db
+: 1511378944:0;sudo pacman -Ss man-db
+: 1511378951:0;sudo pacman -Si man-db
+: 1511378960:0;sudo pacman -S man-db
+: 1511378964:0;man-db
+: 1511378965:0;man
+: 1511378973:0;man man-db
+: 1511378983:0;man man
+: 1511379048:0;info
+: 1511379083:0;info info
+: 1511379364:0;sudo systemctl is-active
+: 1511379371:0;sudo systemctl show
+: 1511379389:0;sudo systemctl status updatedb
+: 1511379404:0;sudo systemctl enable updatedb
+: 1511379436:0;sudo systemctl status updatedb.timer
+: 1511379475:0;pacin vimpager
+: 1511379499:0;echo "export PAGER='vimpager'\
+alias less=$PAGER" >> ~/.zshrc
+: 1511379503:0;cd
+: 1511379514:0;vim ~/.zshrc && source ~/.zshrc
+: 1511379565:0;vimpager .zshrc
+: 1511379584:0;less .zshrc
+: 1511379720:0;vim
+: 1511380037:0;printf '%s\n' 'hello'
+: 1511380045:0;printf "%s\n" 'hello'
+: 1511380051:0;printf("%s\n" 'hello')
+: 1511380067:0;printf "%s\n" 'hello'
+: 1511380101:0;printf "%s %d\n" 'hello' 5
+: 1511380685:0;chmod +x ExecutablesInPath.sh
+: 1511380689:0;./ExecutablesInPath.sh
+: 1511380770:0;./ExecutablesInPath.sh
+: 1511380778:0;printenv
+: 1511380913:0;cp ExecutablesInPath.sh ../.zsh/
+: 1511380918:0;rm ExecutablesInPath.sh
+: 1511381180:0;cd ../.zsh
+: 1511381187:0;la
+: 1511381195:0;chmod +x newrm.sh
+: 1511381207:0;touch file
+: 1511381211:0;./newrm.sh file
+: 1511381220:0;la
+: 1511381256:0;newrm
+: 1511381261:0;./newrm.sh
+: 1511381289:0;./NEnewwrm.sh
+: 1511381293:0;./newwrm.sh
+: 1511381296:0;la
+: 1511381299:0;./newrm.sh
+: 1511381306:0;./NEwrm.sh
+: 1511381327:0;./newrm.sh
+: 1511381348:0;./newrm.sh file
+: 1511381444:0;rm file
+: 1511381446:0;./newrm.sh file
+: 1511381456:0;./newrm.sh file
+: 1511381492:0;echo $HOME/.deleted-files
+: 1511381497:0;ls $HOME/.deleted-files
+: 1511381517:0;ls $HOME/.deleted-files
+: 1511381521:0;mkdirls $HOME/.deleted-files
+: 1511381526:0;mkdir $HOME/.deleted-files
+: 1511381536:0;touch file
+: 1511381540:0;./newrm.sh file
+: 1511381797:0;ls
+: 1511381801:0;./newrm.sh
+: 1511381807:0;touch file
+: 1511381829:0;./newrm.sh file
+: 1511381836:0;ls $HOME/.deleted-files
+: 1511381873:0;vim ~/.zshrc && source ~/.zshrc
+: 1511381953:0;newrm.sh
+: 1511381968:0;mv newrm.sh newrm
+: 1511382029:0;vim ~/.zshrc && source ~/.zshrc
+: 1511382034:0;rm
+: 1511382051:0;touch file2
+: 1511382053:0;rm file2
+: 1511382058:0;la .deleted-files
+: 1511382072:0;vim ~/.zshrc && source ~/.zshrc
+: 1511382211:0;touch file2
+: 1511382212:0;rm file2
+: 1511382233:0;vim ~/.zshrc && source ~/.zshrc
+: 1511382268:0;touch file3
+: 1511382272:0;rm file3
+: 1511382278:0;ls $HOME/.deleted-files
+: 1511382283:0;vim ~/.zshrc && source ~/.zshrc
+: 1511382308:0;which newrm
+: 1511382411:0;unrm
+: 1511382419:0;chmod +x unrm
+: 1511382420:0;unrm
+: 1511382427:0;./unrm
+: 1511382460:0;unrm
+: 1511382468:0;touch file
+: 1511382470:0;rm file
+: 1511382480:0;unrm file
+: 1511382859:0;cd /home/aj/.zsh/
+: 1511382866:0;cat unrm
+: 1511382884:0;cat unrm > findman
+: 1511382948:0;chmod +x findman
+: 1511382949:0;./findman
+: 1511382971:0;./findman man
+: 1511383023:0;findman pacman conf
+: 1511383042:0;findman info man
+: 1511383139:0;/tmp/$0.1.$$
+: 1511383144:0;ls /tmp/$0.1.$$
+: 1511383168:0;./findman man man
+: 1511383223:0;rm findman
+: 1511383338:0;sudo pacman -S ttf-dejavu ttf-liberation
+: 1511383415:0;sudo aura -Akuaxv acroread
+: 1511383449:0;sudo vim /etc/pacman.conf
+: 1511383480:0;sudo pacman -Syu
+: 1511383489:0;sudo aura -Akuaxv acroread
+: 1511383504:0;sudo aura -Au
+: 1511383509:0;sudo aura -Syu
+: 1511383514:0;sudo aura -Akuaxv acroread
+: 1511383549:0;sudo bauerbill -S acroread
+: 1511383594:0;sudo bauerbill -S acroread-it
+: 1511383605:0;sudo bauerbill -S acroread
+: 1511383611:0;cd bui
+: 1511383627:0;cd bin
+: 1511383630:0;git clone https://aur.archlinux.org/acroread.git
+: 1511383635:0;cd acroread
+: 1511383636:0;la
+: 1511383672:0;makepkg -si
+: 1511383745:0;man bauerbill.json
+: 1511383769:0;bauerbill -h
+: 1511383825:0;sudo bauerbill -S --aur acroread-fonts lib32-gtk-engine-murrine
+: 1511383832:0;cd build
+: 1511383835:0;./download.sh
+: 1511383919:0;./build.sh
+: 1511383936:0;rm -rf *
+: 1511383938:0;cd ..
+: 1511383940:0;ls
+: 1511383947:0;rm -rf build
+: 1511383962:0;man shred
+: 1511384002:0;shred ~/.deleted-files/*
+: 1511384008:0;la ~/.deleted-files
+: 1511384014:0;cd ~/.deleted-files
+: 1511384021:0;rm -f *
+: 1511384023:0;la
+: 1511384066:0;echo -n "The rain in Spain"; echo " falls mainly on the Plain"
+: 1511384082:0;man man 
+: 1511384163:0;man man | col -b
+: 1511384209:0;man gcc | col -b | awk -v RS= '/^[[:blank:]]+-O\n/'
+: 1511384224:0;man man | col -b | awk -v RS= '/^[[:blank:]]+-k\n/'
+: 1511384320:0;vim ~/.zshrc && source ~/.zshrc
+: 1511384401:0;manopt man k
+: 1511384411:0;cd
+: 1511384417:0;./dotfiles/makesymlinks.sh
+: 1511384424:0;cd dotfiles
+: 1511384426:0;git add .
+: 1511384432:0;gp
+: 1511384440:0;gc
+: 1511384469:0;vim ~/.zshrc && source ~/.zshrc
+: 1511384525:0;pacin gvim
+: 1511384534:0;gvim
+: 1511384543:0;which gvim
+: 1511384574:0;./makesymlinks.sh
+: 1511384577:0;ga .
+: 1511384580:0;gc
+: 1511384636:0;gp
+: 1511384648:0;git add .

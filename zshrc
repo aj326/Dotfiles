@@ -145,11 +145,11 @@ source /etc/profile.d/autojump.zsh
 
 source $HOME/.zsh/fzy-key-bindings.zsh #https://gist.githubusercontent.com/chaudum/baa1f4981f30733e12acc21379cf3151/raw/c6dfdf2346ef031ca6430b0462587cac9cba60fd/key-bindings.zsh
 
-export PATH=$HOME/bin:$HOME/.local/bin:$PATH
+export PATH=$HOME/bin:$HOME/.zsh:$PATH
 export TERM="xterm-256color"
 export CLASSPATH=$HOME/bin/postgresql-42.1.4.jar:.
 export EDITOR=/usr/bin/vim
-export VISUAL=/usr/bin/emacs
+export VISUAL=/usr/bin/gvim
 
 if [ -f ~/.config/exercism/exercism_completion.zsh ]; then
   . ~/.config/exercism/exercism_completion.zsh
@@ -157,7 +157,7 @@ fi
 function search() {
                      aura -Ss $1 && aura -As $1
                   }
-
+source $HOME/.zsh/manopt.zsh
 #if using ARCH, uncomment Color in /etc/pacman.conf
 
 ###############################################################################
@@ -167,6 +167,7 @@ function search() {
 #alias v='f -e vim'
 alias ls='ls --color=auto'
 alias zshrc='vim ~/.zshrc && source ~/.zshrc'
+alias rm='echo "using newrm"; newrm'
 ##############################################################################
 # History Configuration
 ##############################################################################
@@ -185,3 +186,5 @@ source $HOME/.zsh/fix-key-bindings.zsh #http://zshwiki.org/home/zle/bindkeys
 
 bindkey '\e[A' history-beginning-search-backward
 bindkey '\e[B' history-beginning-search-forward
+export PAGER='vimpager'
+alias less=$PAGER
