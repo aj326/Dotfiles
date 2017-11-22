@@ -126,3 +126,21 @@
 : 1511369349:0;ls dotfiles
 : 1511369362:0;cd dotfiles
 : 1511369365:0;git add .
+: 1511369376:0;git commit -m "add zshrc"
+: 1511369387:0;git push
+: 1511369420:0;pacin vimpager
+: 1511369431:0;echo $PAGER
+: 1511369434:0;echo $PAGE
+: 1511369464:0;vimpager spacemacs
+: 1511369502:0;alias | grep pacman
+: 1511369522:0;sudo pacman -Rscs most vimpager
+: 1511369552:0;pacin vimpager
+: 1511369556:0;vimpager spacemacs
+: 1511369562:0;vimpager spacemacs
+: 1511369577:0;vim spacemacs
+: 1511369583:0;vim spacemacs
+: 1511369619:0;sudo vim /etc/vimrc
+: 1511369645:0;vim vimrc
+: 1511369678:0;vim vimrc
+: 1511369683:0;vimpager spacemacs
+: 1511369702:0;ga .
