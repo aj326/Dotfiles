@@ -140,8 +140,11 @@ zplug load --verbose
 ################################################################################
 
 set -o vi
+
 source /etc/profile.d/autojump.zsh
+
 source $HOME/.zsh/fzy-key-bindings.zsh #https://gist.githubusercontent.com/chaudum/baa1f4981f30733e12acc21379cf3151/raw/c6dfdf2346ef031ca6430b0462587cac9cba60fd/key-bindings.zsh
+
 export PATH=$HOME/bin:$HOME/.local/bin:$PATH
 export TERM="xterm-256color"
 export CLASSPATH=$HOME/bin/postgresql-42.1.4.jar:.
@@ -151,7 +154,6 @@ export VISUAL=/usr/bin/emacs
 if [ -f ~/.config/exercism/exercism_completion.zsh ]; then
   . ~/.config/exercism/exercism_completion.zsh
 fi
-
 function search() {
                      aura -Ss $1 && aura -As $1
                   }
@@ -164,13 +166,14 @@ function search() {
 #fasd
 #alias v='f -e vim'
 alias ls='ls --color=auto'
+alias zshrc='vim ~/.zshrc && source ~/.zshrc'
 ##############################################################################
 # History Configuration
 ##############################################################################
 HISTSIZE=5000               #How many lines of history to keep in memory
 HISTFILE=~/.zsh_history     #Where to save history to disk
 SAVEHIST=5000               #Number of history entries to save to disk
-#HISTDUP=erase               #Erase duplicates in the history file
+HISTDUP=erase               #Erase duplicates in the history file
 setopt    appendhistory     #Append history to the history file (no overwriting)
 setopt    sharehistory      #Share history across terminals
 setopt    incappendhistory  #Immediately append to the history file, not just when a term is killed
@@ -178,7 +181,7 @@ setopt    incappendhistory  #Immediately append to the history file, not just wh
 # Key Bindings
 # ##############################################################################
 
-source $HOME/.zsh/fix-key-bindings.zsh http://zshwiki.org/home/zle/bindkeys
+source $HOME/.zsh/fix-key-bindings.zsh #http://zshwiki.org/home/zle/bindkeys
 
 bindkey '\e[A' history-beginning-search-backward
 bindkey '\e[B' history-beginning-search-forward

@@ -101,3 +101,28 @@
 : 1511231327:0;la
 : 1511231348:0;vim makesymlinks.sh
 : 1511231377:0;git add .
+: 1511231392:0;git commit -m "sourced makesymlinks file"
+: 1511231401:0;git push
+: 1511231479:0;cd 
+: 1511231501:0;vim ~/.zshrc && source ~/.zshrc
+: 1511231894:0;vim ~/.zshrc && source ~/.zshrc
+: 1511231932:0;vim ~/.zshrc && source ~/.zshrc
+: 1511231989:0;vim ~/.zshrc && source ~/.zshrc
+: 1511232087:0;vim ~/.zshrc && source ~/.zshrc
+: 1511232140:0;vim ~/.zshrc && source ~/.zshrc
+: 1511232276:0;cat /etc/os-release
+: 1511232317:0;uname
+: 1511232321:0;uname -h
+: 1511232325:0;uname --help
+: 1511232334:0;uname -v
+: 1511232337:0;uname -r
+: 1511233146:0;sudo mkdir -p /etc/pacman.d/hooks/
+: 1511233156:0;sudo vim /etc/pacman.d/hooks/mirrorupgrade.hook
+: 1511233274:0;alias | grep pacman
+: 1511233284:0;pacupg
+: 1511368394:0;vim
+: 1511369293:0;pacin most
+: 1511369335:0;most dotfiles/zshrc
+: 1511369349:0;ls dotfiles
+: 1511369362:0;cd dotfiles
+: 1511369365:0;git add .
