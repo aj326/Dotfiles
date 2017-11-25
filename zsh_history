@@ -536,3 +536,11 @@ alias less=$PAGER" >> ~/.zshrc
 : 1511642529:0;cd ..
 : 1511642532:0;cd dotfiles
 : 1511642535:0;ga .
+: 1511642538:0;gc
+: 1511642610:0;vim ~/.zshrc && source ~/.zshrc
+: 1511642652:0;gc
+: 1511642674:0;Set the GIT_EDITOR environment variable: export GIT_EDITOR
+: 1511642677:0;set the GIT_EDITOR environment variable: export GIT_EDITOR
+: 1511642697:0;Set the GIT_EDITOR environment variable: export GIT_EDITOR="emacsclient -t"  
+: 1511642702:0;set the GIT_EDITOR environment variable: export GIT_EDITOR="emacsclient -t"  
+: 1511642705:0;gc

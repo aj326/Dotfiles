@@ -148,8 +148,9 @@ source $HOME/.zsh/fzy-key-bindings.zsh #https://gist.githubusercontent.com/chaud
 export PATH=$HOME/bin:$HOME/.zsh/bin:$PATH
 export TERM="xterm-256color"
 export CLASSPATH=$HOME/bin/postgresql-42.1.4.jar:.
-export EDITOR=/usr/bin/vim
-export VISUAL=/usr/bin/gvim
+export ALTERNATE_EDITOR=""
+export EDITOR="emacsclient -t"                  # $EDITOR should open in terminal
+export VISUAL="emacsclient -c -a emacs"         # $VISUAL opens in GUI with non-daemon as alternate
 
 if [ -f $HOME/.config/exercism/exercism_completion.zsh ]; then
   . $HOME/.config/exercism/exercism_completion.zsh
