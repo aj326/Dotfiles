@@ -336,3 +336,203 @@ alias less=$PAGER" >> ~/.zshrc
 : 1511384580:0;gc
 : 1511384636:0;gp
 : 1511384648:0;git add .
+: 1511384657:0;git commit -m "another try"
+: 1511384660:0;git push
+: 1511384675:0;alias gp
+: 1511384840:0;ispellaff2myspell -h
+: 1511384848:0;aspell "ahmed"
+: 1511384856:0;man aspell
+: 1511384917:0;bauerbill -Ss --aur ispell
+: 1511384970:0;aspell check | echo "this"
+: 1511385006:0;echo "this" | aspell check
+: 1511385037:0;aspell -l
+: 1511385048:0;manopt aspell l
+: 1511385059:0;aspell -l ah
+: 1511385087:0;echo "this" | aspell -l
+: 1511385103:0;echo "this" | aspell
+: 1511385117:0;echo "this" | aspell -a
+: 1511385142:0;aspell-import
+: 1511385152:0;aspell -a | echo "ht"
+: 1511385201:0;aspell dicts
+: 1511385232:0;pacin aspell-en
+: 1511385236:0;aspell -a | echo "ht"
+: 1511385241:0;aspell -a | echo "the"
+: 1511385255:0;echo "this" | aspell -a
+: 1511385262:0;echo "this is mete" | aspell -a
+: 1511385266:0;echo "this is msdfete" | aspell -a
+: 1511385362:0;chmod +x shpell
+: 1511385366:0;./shpell
+: 1511385538:0;./shpell shake.txt
+: 1511385552:0;aspell 
+: 1511385573:0;aspell -c ~/.zsh/shake.txt
+: 1511385649:0;rm -f ~/.zsh/sh*
+: 1511385703:0;awk '{ print NR": "$0 }' < zshrc
+: 1511385797:0;chmod +x showfile
+: 1511385807:0;./showfile showfile
+: 1511385826:0;showjournal
+: 1511385832:0;showjournal -h
+: 1511385836:0;man showjournal -h
+: 1511385840:0;man showjournal
+: 1511385850:0;showfile zshrc
+: 1511385898:0;pacin realpath
+: 1511386016:0;vim ~/.zshrc && source ~/.zshrc
+: 1511386052:0;showfile zshrc
+: 1511386117:0;showfile zshrc
+: 1511386154:0;showfile zshrc
+: 1511386162:0;vim ~/.zshrc && source ~/.zshrc
+: 1511386165:0;showfile zshrc
+: 1511386182:0;less zshrc
+: 1511386194:0;more zshrc
+: 1511386292:0;vim ~/.zshrc && source ~/.zshrc
+: 1511386298:0;showfile zshrc
+: 1511386312:0;vim ~/.zshrc && source ~/.zshrc
+: 1511386628:0;quota
+: 1511386744:0;manopt grep c
+: 1511386748:0;man grep
+: 1511386840:0;man -k grep
+: 1511386857:0;apropos ls
+: 1511386878:0;man -k ls
+: 1511386912:0;grep
+: 1511386914:0;ls
+: 1511386928:0;ls | grep zsh
+: 1511386933:0;grep zsh
+: 1511386944:0;man grep
+: 1511386983:0;grep -a 2 -b 2 -f HOME -f zshrc
+: 1511386989:0;grep -a 2 -b 2 HOME -f zshrc
+: 1511387009:0;grep -a 2 -b 2 $HOME -f zshrc
+: 1511387023:0;grep -a 2 -b 2 -c 1 $HOME -f zshrc
+: 1511387027:0;man grep
+: 1511387052:0;cat zshrc| grep $HOME
+: 1511387062:0;cat zshrc| grep '$HOME'
+: 1511387080:0;cat zshrc| grep '$HOME' -a 2
+: 1511387089:0;cat zshrc| grep -a 2 '$HOME'
+: 1511387100:0;cat zshrc| grep -a 2 \$HOME
+: 1511387107:0;man grep
+: 1511387115:0;cat zshrc| grep -a 2 -e  \$HOME
+: 1511387122:0;cat zshrc| grep -a 2 -e  $HOME
+: 1511387128:0;cat zshrc| grep -a2 -e  $HOME
+: 1511387141:0;cat zshrc| grep -a2 -e  "$HOME"
+: 1511387814:0;vim ~/.zshrc && source ~/.zshrc
+: 1511387879:0;vim ~/.zshrc && source ~/.zshrc
+: 1511387902:0;vim ~/.zshrc && source ~/.zshrc
+: 1511387946:0;vim ~/.zshrc && source ~/.zshrc
+: 1511387970:0;manopt grep c
+: 1511387974:0;manopt grep a
+: 1511387980:0;which manopt
+: 1511387994:0;manopt gcc o
+: 1511388004:0;vim ~/.zshrc && source ~/.zshrc
+: 1511388152:0;manopt
+: 1511388161:0;manopt gcc o
+: 1511388222:0;manopt gcc o
+: 1511388321:0;manopt gcc O
+: 1511388328:0;manopt gcc O
+: 1511388338:0;which manopt
+: 1511388359:0;search firefox
+: 1511388376:0;search firefox | less
+: 1511388579:0;la .zsh
+: 1511388589:0;la dotfiles/zsh
+: 1511388595:0;la dotfiles/zsh/bin
+: 1511388612:0;cd .zsh
+: 1511388614:0;la
+: 1511388622:0;chmod +x showfile
+: 1511388638:0;mv showfile bin
+: 1511388649:0;la bin
+: 1511388654:0;rm showfile
+: 1511389193:0;pacin ghc
+: 1511389210:0;ghc
+: 1511389227:0;ghc --help
+: 1511389410:0;sudo vim /etc/pacman.conf
+: 1511389454:0;sudo vim /etc/pacman.conf
+: 1511389503:0;sudo pacman -Suy
+: 1511389524:0;sudo pacman -Suy
+: 1511389554:0;sudo pacman-key -r 4209170B\
+
+: 1511389561:0;sudo pacman-key --lsign-key 4209170B
+: 1511389564:0;sudo pacman -Suy
+: 1511389622:0;haskell-core
+: 1511389627:0;pacin haskell-core
+: 1511389632:0;sudo vim /etc/pacman.conf
+: 1511389640:0;sudo pacman -Suy
+: 1511389671:0;which ghci
+: 1511389673:0;ghci
+: 1511389821:0;zshrc
+: 1511389854:0;pacrem foxitreader
+: 1511389885:0;sudo pacman -R $(pacman -Qdtq)
+: 1511389919:0;pacin clang
+: 1511391378:0;gc
+: 1511391395:0;gc
+: 1511391402:0;git commit
+: 1511391445:0;git config --global core.editor
+: 1511391458:0;which vim
+: 1511391467:0;git config --global core.editor "/usr/bin/vim -w"
+: 1511391469:0;gc
+: 1511391493:0;gc
+: 1511391574:0;gc
+: 1511391632:0;git config --global core.editor
+: 1511391642:0;echo $GIT_EDITOR
+: 1511391653:0;export $GIT_EDITOR=vim
+: 1511391663:0;export GIT_EDITOR=vim
+: 1511391668:0;gc
+: 1511391691:0;gp
+: 1511391723:0;killall emacs
+: 1511391736:0;ps aux | grep emacs
+: 1511391747:0;kill 6184
+: 1511391751:0;kill 6700
+: 1511391755:0;ps aux | grep emacs
+: 1511391824:0;cd ../.emacs.d
+: 1511391825:0;la
+: 1511391834:0;la
+: 1511391840:0;rm -rf emacs.d
+: 1511391880:0;cd
+: 1511391884:0;la .zsh
+: 1511391889:0;cd .zsh
+: 1511391891:0;la .zsh
+: 1511391894:0;cd ..
+: 1511391896:0;cd .zplug
+: 1511391897:0;la
+: 1511391928:0;rm -rf zplug
+: 1511391929:0;cd ..
+: 1511391932:0;cd .zplug
+: 1511391933:0;la
+: 1511391936:0;cd ..
+: 1511391939:0;la .zsh
+: 1511391939:0;la
+: 1511391955:0;cd .zsh
+: 1511391956:0;la
+: 1511391958:0;cd ..
+: 1511391962:0;cd .fonts
+: 1511391964:0;la
+: 1511391969:0;rm -rf fonts
+: 1511391979:0;cd ..
+: 1511391989:0;./dotfiles/makesymlinks.sh
+: 1511392009:0;cd .zsh
+: 1511392009:0;la
+: 1511392325:0;vim dotfiles
+: 1511392344:0;rm dotfiles/spacemacs
+: 1511392350:0;rm .spacemacs
+: 1511392361:0;rm -rf .emacs.d
+: 1511392391:0;curl -L https://git.io/epre | sh
+: 1511392700:0;rm -rf .emacs.d
+: 1511392717:0;git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+: 1511392756:0;vim .deleted-files/24.12.17.22.11.spacemacs
+: 1511392867:0;cd dotfiles
+: 1511392877:0;vim makesymlinks.sh
+: 1511393007:0;emacs
+: 1511393042:0;echo $SSH_AUTH_SOCK
+: 1511393232:0;mv .deleted-files/24.12.17.22.11.spacemacs .spacemacs
+: 1511393255:0;mv .spacemacs dotfiles/spacemacs
+: 1511393258:0;./dotfiles/makesymlinks.sh
+: 1511393264:0;la
+: 1511393534:0;which emacs
+: 1511393605:0;emacs --daemon
+: 1511393618:0;emacs --daemon
+: 1511642432:0;la ~
+: 1511642461:0;vim dotfiles/makesymlinks.sh
+: 1511642482:0;./dotfiles/makesymlinks.sh
+: 1511642491:0;la
+: 1511642501:0;la | grep emacs
+: 1511642517:0;cd .emacs.d
+: 1511642517:0;la
+: 1511642529:0;cd ..
+: 1511642532:0;cd dotfiles
+: 1511642535:0;ga .

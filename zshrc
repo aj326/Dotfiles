@@ -77,12 +77,12 @@ zplug "srijanshetty/zsh-pip-completion"
 zplug "zsh-users/zsh-autosuggestions"
 zplug "hcgraf/zsh-sudo" #ESC ESC for sudo before command
 
- Can manage local plugins
-zplug "~/.zsh", from:local
+#Can manage local plugins
+zplug "$HOME/.zsh", from:local
 
 # Source a file that isn't a .zsh file
 # zplug "rupa/z", as:command, use:z.sh, rename-to:z
-# . /home/aj/bin/z
+# . $HOME/bin/z
 zplug "unixorn/warhol.plugin.zsh"
 # Load theme file
 #zplug "sindresorhus/pure", use:pure.zsh, from:github, as:theme
@@ -111,7 +111,7 @@ zplug load --verbose
 # shufExists=false;
 # xcowsayExists=false;
 #
-# if ! [ -f ~/.futurama ]; then
+# if ! [ -f $HOME/.futurama ]; then
 # echo "Downloading futurama quotes"
 # curl -s https://raw.githubusercontent.com/vsbuffalo/good-news-everyone/master/futurama.txt > .futurama
 # fi
@@ -132,7 +132,7 @@ zplug load --verbose
 # fi
 #
 # if [ $shufExists=true ] && [ $xcowsayExists=true ]; then
-#   shuf -n1 ~/.futurama | xcowsay --time=1
+#   shuf -n1 $HOME/.futurama | xcowsay --time=1
 # fi
 
 ################################################################################
@@ -145,19 +145,19 @@ source /etc/profile.d/autojump.zsh
 
 source $HOME/.zsh/fzy-key-bindings.zsh #https://gist.githubusercontent.com/chaudum/baa1f4981f30733e12acc21379cf3151/raw/c6dfdf2346ef031ca6430b0462587cac9cba60fd/key-bindings.zsh
 
-export PATH=$HOME/bin:$HOME/.zsh:$PATH
+export PATH=$HOME/bin:$HOME/.zsh/bin:$PATH
 export TERM="xterm-256color"
 export CLASSPATH=$HOME/bin/postgresql-42.1.4.jar:.
 export EDITOR=/usr/bin/vim
 export VISUAL=/usr/bin/gvim
 
-if [ -f ~/.config/exercism/exercism_completion.zsh ]; then
-  . ~/.config/exercism/exercism_completion.zsh
+if [ -f $HOME/.config/exercism/exercism_completion.zsh ]; then
+  . $HOME/.config/exercism/exercism_completion.zsh
 fi
 function search() {
                      aura -Ss $1 && aura -As $1
                   }
-source $HOME/.zsh/manopt.zsh
+#source $HOME/.zsh/manopt.zsh
 #if using ARCH, uncomment Color in /etc/pacman.conf
 
 ###############################################################################
@@ -166,13 +166,13 @@ source $HOME/.zsh/manopt.zsh
 #fasd
 #alias v='f -e vim'
 alias ls='ls --color=auto'
-alias zshrc='vim ~/.zshrc && source ~/.zshrc'
+alias zshrc='vim $HOME/.zshrc && source $HOME/.zshrc'
 alias rm='echo "using newrm"; newrm'
 ##############################################################################
 # History Configuration
 ##############################################################################
 HISTSIZE=5000               #How many lines of history to keep in memory
-HISTFILE=~/.zsh_history     #Where to save history to disk
+HISTFILE=$HOME/.zsh_history     #Where to save history to disk
 SAVEHIST=5000               #Number of history entries to save to disk
 HISTDUP=erase               #Erase duplicates in the history file
 setopt    appendhistory     #Append history to the history file (no overwriting)
