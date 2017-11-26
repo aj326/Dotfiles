@@ -106,60 +106,35 @@ fi
 zplug load --verbose
 #zplug update
 
-
-# Futurama Fortune
-# shufExists=false;
-# xcowsayExists=false;
-#
-# if ! [ -f $HOME/.futurama ]; then
-# echo "Downloading futurama quotes"
-# curl -s https://raw.githubusercontent.com/vsbuffalo/good-news-everyone/master/futurama.txt > .futurama
-# fi
-#
-#
-# if ! [ -x "$(command -v shuf)" ]; then
-# echo 'Error: shuf is not installed.'>&2
-#   exit 1
-# else
-# shufExists=true;
-# fi
-#
-# if ! [ -x "$(command -v xcowsay)" ]; then
-# echo 'Error: xcowsay is not installed.'>&2
-#   exit 1
-# else
-# xcowsayExists=true;
-# fi
-#
-# if [ $shufExists=true ] && [ $xcowsayExists=true ]; then
-#   shuf -n1 $HOME/.futurama | xcowsay --time=1
-# fi
-
 ################################################################################
 # Environment
 ################################################################################
-
 set -o vi
+typeset -U path
+#source $HOME/.zsh/manopt.zsh #apparently zplpug can import functions from local zsh dir
 
+###############################################################################
+# Arch Linux Settings
+################################################################################
+
+#Autojump
+#########
 source /etc/profile.d/autojump.zsh
 
-source $HOME/.zsh/fzy-key-bindings.zsh #https://gist.githubusercontent.com/chaudum/baa1f4981f30733e12acc21379cf3151/raw/c6dfdf2346ef031ca6430b0462587cac9cba60fd/key-bindings.zsh
+#Command Not Found -- Searching at ABS#
+#######################################
+source /usr/share/doc/pkgfile/command-not-found.zsh #install pkgfile, enable systemd
 
-export PATH=$HOME/bin:$HOME/.zsh/bin:$PATH
-export TERM="xterm-256color"
-export CLASSPATH=$HOME/bin/postgresql-42.1.4.jar:.
-export ALTERNATE_EDITOR=""
-export EDITOR="emacsclient -t"                  # $EDITOR should open in terminal
-export VISUAL="emacsclient -c -a emacs"         # $VISUAL opens in GUI with non-daemon as alternate
+#if using ARCH, uncomment Color in /etc/pacman.conf
 
+#source $HOME/.zsh/manopt.zsh #apparently zplpug can import functions from local zsh dir
 if [ -f $HOME/.config/exercism/exercism_completion.zsh ]; then
   . $HOME/.config/exercism/exercism_completion.zsh
 fi
+
 function search() {
                      aura -Ss $1 && aura -As $1
                   }
-#source $HOME/.zsh/manopt.zsh
-#if using ARCH, uncomment Color in /etc/pacman.conf
 
 ###############################################################################
 # Aliases
@@ -168,7 +143,9 @@ function search() {
 #alias v='f -e vim'
 alias ls='ls --color=auto'
 alias zshrc='vim $HOME/.zshrc && source $HOME/.zshrc'
-alias rm='echo "using newrm"; newrm'
+alias rm='newrm'
+alias less='vimpager'
+
 ##############################################################################
 # History Configuration
 ##############################################################################
@@ -179,13 +156,21 @@ HISTDUP=erase               #Erase duplicates in the history file
 setopt    appendhistory     #Append history to the history file (no overwriting)
 setopt    sharehistory      #Share history across terminals
 setopt    incappendhistory  #Immediately append to the history file, not just when a term is killed
+
 ##############################################################################
 # Key Bindings
-# ##############################################################################
+##############################################################################
 
-source $HOME/.zsh/fix-key-bindings.zsh #http://zshwiki.org/home/zle/bindkeys
 
 bindkey '\e[A' history-beginning-search-backward
 bindkey '\e[B' history-beginning-search-forward
-export PAGER='vimpager'
-alias less=$PAGER
+
+##################
+# Fix Key Bindings
+##################
+source $HOME/.zsh/fix-key-bindings.zsh #http://zshwiki.org/home/zle/bindkeys
+
+##################
+# FZY Key Bindings
+##################
+source $HOME/.zsh/fzy-key-bindings.zsh #https://gist.githubusercontent.com/chaudum/baa1f4981f30733e12acc21379cf3151/raw/c6dfdf2346ef031ca6430b0462587cac9cba60fd/key-bindings.zsh

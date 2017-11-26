@@ -544,3 +544,10 @@ alias less=$PAGER" >> ~/.zshrc
 : 1511642697:0;Set the GIT_EDITOR environment variable: export GIT_EDITOR="emacsclient -t"  
 : 1511642702:0;set the GIT_EDITOR environment variable: export GIT_EDITOR="emacsclient -t"  
 : 1511642705:0;gc
+: 1511733408:0;echo $CLASSPATH
+: 1511734511:0;rm -rf .emacs.d/emacs.d
+: 1511734529:0;rm -rf .fonts/fonts
+: 1511734542:0;rm -rf .zplug/zplug
+: 1511734568:0;cd dotfiles
+: 1511734571:0;./makesymlinks.sh
+: 1511734595:0;ga .

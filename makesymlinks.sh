@@ -9,7 +9,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="zshrc zsh zplug zsh_history fonts spacemacs vimrc emacs.d"    # list of files/folders to symlink in homedir
+files="zshenv zshrc zsh zplug zsh_history fonts spacemacs vimrc emacs.d"    # list of files/folders to symlink in homedir
 
 ##########
 
