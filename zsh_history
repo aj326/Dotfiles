@@ -551,3 +551,47 @@ alias less=$PAGER" >> ~/.zshrc
 : 1511734568:0;cd dotfiles
 : 1511734571:0;./makesymlinks.sh
 : 1511734595:0;ga .
+: 1511734597:0;gc
+: 1511734683:0;la ~/.zplug
+: 1511734688:0;la ~/.zplug/
+: 1511734700:0;rm ~/.zplug/zplug
+: 1511734929:0;cd zsh/
+: 1511734929:0;la
+: 1511734956:0;mv auraPacSearch pacAuaraSearch.zsg
+: 1511734962:0;mv pacAuaraSearch.zsg pacAuaraSearch.zsh
+: 1511735014:0;source ~/.zshrc
+: 1511735019:0;search firefox | less
+: 1511735049:0;search firefox
+: 1511735246:0;source ~/.zshrc
+: 1511735252:0;dirs -c
+: 1511735255:0;dirs -v
+: 1511735290:0;cdr
+: 1511735384:0;source ~/.zshrc
+: 1511735386:0;help
+: 1511735395:0;help git
+: 1511735409:0;help hash
+: 1511735460:0;pacin  zsh-syntax-highlighting
+: 1511735473:0;source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+: 1511735507:0;pacrem  zsh-syntax-highlighting
+: 1511735546:0;print -n '\e]2;My xterm title\a'\
+
+: 1511735584:0;pacin zsh-lovers
+: 1511735591:0;zsh-lovers
+: 1511735593:0;man zsh-lovers
+: 1511735650:0;manopt alias s
+: 1511735655:0;man alias
+: 1511735673:0;manopt zsh s
+: 1511735679:0;man zsh-lovers
+: 1511735814:0;tree
+: 1511735819:0;pacin tree
+: 1511735822:0;tree
+: 1511735881:0;pacin  zsh-syntax-highlighting
+: 1511735887:0;source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+: 1511735888:0;tree
+: 1511735937:0;pacrem  zsh-syntax-highlighting
+: 1511736431:0;chmod +x demo.zsh
+: 1511736434:0;./demo.zsh
+: 1511736447:0;tree
+: 1511736509:0;cd bin
+: 1511736517:0;cd
+: 1511736519:0;exit

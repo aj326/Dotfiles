@@ -103,7 +103,7 @@ if ! zplug check --verbose; then
 fi
 
 # Then, source plugins and add commands to $PATH
-zplug load --verbose
+zplug load #--verbose
 #zplug update
 
 ################################################################################
@@ -111,8 +111,8 @@ zplug load --verbose
 ################################################################################
 set -o vi
 typeset -U path
-#source $HOME/.zsh/manopt.zsh #apparently zplpug can import functions from local zsh dir
-
+#needs fortune, dhammapada fortune, lolcat (for coloring), cowsay (for graphic)
+fortune dhammapada | fmt -80 -s | $(shuf -n 1 -e cowsay cowthink) -$(shuf -n 1 -e b d g p s t w y) -f $(shuf -n 1 -e $(cowsay -l | tail -n +2)) -n | lolcat -t
 ###############################################################################
 # Arch Linux Settings
 ################################################################################
@@ -127,14 +127,12 @@ source /usr/share/doc/pkgfile/command-not-found.zsh #install pkgfile, enable sys
 
 #if using ARCH, uncomment Color in /etc/pacman.conf
 
-#source $HOME/.zsh/manopt.zsh #apparently zplpug can import functions from local zsh dir
 if [ -f $HOME/.config/exercism/exercism_completion.zsh ]; then
   . $HOME/.config/exercism/exercism_completion.zsh
 fi
-
 function search() {
-                     aura -Ss $1 && aura -As $1
-                  }
+    aura -Ss $1 && aura -As $1
+}
 
 ###############################################################################
 # Aliases
@@ -145,7 +143,7 @@ alias ls='ls --color=auto'
 alias zshrc='vim $HOME/.zshrc && source $HOME/.zshrc'
 alias rm='newrm'
 alias less='vimpager'
-
+#source $HOME/.zsh/manopt.zsh #apparently zplpug can import functions from local zsh dir
 ##############################################################################
 # History Configuration
 ##############################################################################
@@ -174,3 +172,17 @@ source $HOME/.zsh/fix-key-bindings.zsh #http://zshwiki.org/home/zle/bindkeys
 # FZY Key Bindings
 ##################
 source $HOME/.zsh/fzy-key-bindings.zsh #https://gist.githubusercontent.com/chaudum/baa1f4981f30733e12acc21379cf3151/raw/c6dfdf2346ef031ca6430b0462587cac9cba60fd/key-bindings.zsh
+
+
+##############################################################################
+# Help
+##############################################################################
+autoload -Uz run-help
+alias help=run-help
+autoload -Uz run-help-git
+autoload -Uz run-help-ip
+autoload -Uz run-help-openssl
+autoload -Uz run-help-p4
+autoload -Uz run-help-sudo
+autoload -Uz run-help-svk
+autoload -Uz run-help-svn
