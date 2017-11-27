@@ -111,6 +111,8 @@ zplug load #--verbose
 ################################################################################
 set -o vi
 typeset -U path
+setopt correct
+export SPROMPT="Correct $fg[red]%R$reset_color to $fg[green]%r?$reset_color (yes, no, abort, edit) "
 ###############################################################################
 # Arch Linux Settings
 ################################################################################
