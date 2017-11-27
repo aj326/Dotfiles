@@ -5,6 +5,7 @@ plugins/alias-tips, from:oh-my-zsh
 plugins/archlinux, from:oh-my-zsh
 plugins/command-not-found, from:oh-my-zsh
 plugins/common-aliases, from:oh-my-zsh
+plugins/emoji, from:oh-my-zsh
 plugins/git, from:oh-my-zsh
 srijanshetty/zsh-pip-completion
 themes/agnoster, from:oh-my-zsh

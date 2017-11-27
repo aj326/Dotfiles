@@ -610,3 +610,11 @@ alias less=$PAGER" >> ~/.zshrc
 : 1511747344:0;pacmaa
 : 1511747469:0;setopt correct
 : 1511747520:0;ga .
+: 1511747522:0;gc
+: 1511747577:0;vim zlogin
+: 1511747583:0;vim zshenv
+: 1511747589:0;gp
+: 1511747704:0;ls **
+: 1511747729:0;vim ~/.zshrc && source ~/.zshrc
+: 1511747759:0;rm zsh/search.zsh
+: 1511747943:0;echo *

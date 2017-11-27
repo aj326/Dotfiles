@@ -25,6 +25,7 @@ zplug "plugins/common-aliases",   from:oh-my-zsh
 zplug "plugins/command-not-found", from:oh-my-zsh
 zplug "plugins/archlinux",   from:oh-my-zsh
 zplug "plugins/alias-tips", from:oh-my-zsh
+zplug "plugins/emoji", from:oh-my-zsh
 #zplug "desyncr/auto-ls"
 zplug "zlsun/solarized-man"
 
@@ -111,6 +112,7 @@ zplug load #--verbose
 ################################################################################
 set -o vi
 typeset -U path
+
 setopt correct
 export SPROMPT="Correct $fg[red]%R$reset_color to $fg[green]%r?$reset_color (yes, no, abort, edit) "
 ###############################################################################
@@ -140,12 +142,15 @@ alias aurins='sudo aura -Akuaxv'
 ################################################################################
 #fasd
 #alias v='f -e vim'
-alias ls='ls --color=auto'
-alias zshrc='vim $HOME/.zshrc && source $HOME/.zshrc'
-alias rm='newrm'
+alias diff='colordiff' 
+alias grep='grep --color=auto'
 alias less='vimpager'
+alias ls='ls --color=auto'
+alias mkdir='mkdir -p -v'
+alias rm='newrm'
 alias -s pdf='okular'
-#source $HOME/.zsh/manopt.zsh #apparently zplpug can import functions from local zsh dir
+alias zshrc='vim $HOME/.zshrc && source $HOME/.zshrc'
+source $HOME/.zsh/manopt.zsh #apparently zplpug can import functions from local zsh dir
 ##############################################################################
 # History Configuration
 ##############################################################################
