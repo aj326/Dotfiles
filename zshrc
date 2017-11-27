@@ -111,8 +111,6 @@ zplug load #--verbose
 ################################################################################
 set -o vi
 typeset -U path
-#needs fortune, dhammapada fortune, lolcat (for coloring), cowsay (for graphic)
-fortune dhammapada | fmt -80 -s | $(shuf -n 1 -e cowsay cowthink) -$(shuf -n 1 -e b d g p s t w y) -f $(shuf -n 1 -e $(cowsay -l | tail -n +2)) -n | lolcat -t
 ###############################################################################
 # Arch Linux Settings
 ################################################################################
@@ -134,6 +132,7 @@ function search() {
     aura -Ss $1 && aura -As $1
 }
 
+alias aurins='sudo aura -Akuaxv'
 ###############################################################################
 # Aliases
 ################################################################################
@@ -143,6 +142,7 @@ alias ls='ls --color=auto'
 alias zshrc='vim $HOME/.zshrc && source $HOME/.zshrc'
 alias rm='newrm'
 alias less='vimpager'
+alias -s pdf='okular'
 #source $HOME/.zsh/manopt.zsh #apparently zplpug can import functions from local zsh dir
 ##############################################################################
 # History Configuration

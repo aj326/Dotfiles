@@ -595,3 +595,7 @@ alias less=$PAGER" >> ~/.zshrc
 : 1511736509:0;cd bin
 : 1511736517:0;cd
 : 1511736519:0;exit
+: 1511747022:0;cd
+: 1511747053:0;rm -rf .fonts/fonts .emacs.d/emacs.d .zplug/zplug
+: 1511747069:0;cd dotfiles
+: 1511747071:0;ga .
