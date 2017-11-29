@@ -629,3 +629,8 @@ alias less=$PAGER" >> ~/.zshrc
 : 1511918718:0;cd dotfiles
 : 1511918736:0;git commit -ma "gpg"
 : 1511918744:0;ga .
+: 1511918745:0;gc
+: 1511918771:0;la **
+: 1511918799:0;rm emacs.d/emacs.d fonts/fonts zplug/zplug
+: 1511918803:0;ga
+: 1511918806:0;ga .
