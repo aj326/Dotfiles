@@ -618,3 +618,14 @@ alias less=$PAGER" >> ~/.zshrc
 : 1511747729:0;vim ~/.zshrc && source ~/.zshrc
 : 1511747759:0;rm zsh/search.zsh
 : 1511747943:0;echo *
+: 1511918336:0;emacs makesymlinks.sh
+: 1511918526:0;la
+: 1511918534:0;emacs
+: 1511918562:0;emacs
+: 1511918583:0;vim dotfiles/makesymlinks.sh
+: 1511918599:0;echo $EDITOR
+: 1511918611:0;emacsclient -t dotfiles/makesymlinks.sh
+: 1511918686:0;vim dotfiles/makesymlinks.sh
+: 1511918718:0;cd dotfiles
+: 1511918736:0;git commit -ma "gpg"
+: 1511918744:0;ga .
