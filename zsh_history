@@ -634,3 +634,23 @@ alias less=$PAGER" >> ~/.zshrc
 : 1511918799:0;rm emacs.d/emacs.d fonts/fonts zplug/zplug
 : 1511918803:0;ga
 : 1511918806:0;ga .
+: 1511918809:0;gc
+: 1511918838:0;gp
+: 1511920084:0;la **
+: 1511920110:0;cd ..
+: 1511920330:0;aurins ttf-fira-code
+: 1511920687:0;git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+: 1511920693:0;rm -rf .emacs.d
+: 1511920695:0;git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+: 1511920831:0;cd drive/migrateToOS
+: 1511920834:0;vim todo
+: 1511920887:0;vim drive/migrateToOS/todo
+: 1511920963:0;la .emacs.d
+: 1511920991:0;emacs
+: 1511921334:0;rm .spacemacs
+: 1511921350:0;git clone git@github.com:aj326/.spacemacs.d.git
+: 1511921387:0;emacs
+: 1511926683:0;emas
+: 1511926684:0;emacs
+: 1511926691:0;cd
+: 1511926693:0;la

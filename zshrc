@@ -104,8 +104,8 @@ if ! zplug check --verbose; then
 fi
 
 # Then, source plugins and add commands to $PATH
-zplug load --verbose
-zplug update
+zplug load #--verbose
+#zplug update
 
 ################################################################################
 # Environment
@@ -143,6 +143,7 @@ alias aurins='sudo aura -Akuaxv'
 #fasd
 #alias v='f -e vim'
 alias diff='colordiff' 
+alias emacs='emacsclient -c -a emacs'
 alias less='vimpager'
 alias ls='ls --color=auto'
 alias mkdir='mkdir -p -v'
