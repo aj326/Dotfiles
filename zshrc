@@ -143,7 +143,6 @@ alias aurins='sudo aura -Akuaxv'
 #fasd
 #alias v='f -e vim'
 alias diff='colordiff' 
-alias grep='grep --color=auto'
 alias less='vimpager'
 alias ls='ls --color=auto'
 alias mkdir='mkdir -p -v'
