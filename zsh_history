@@ -654,3 +654,18 @@ alias less=$PAGER" >> ~/.zshrc
 : 1511926684:0;emacs
 : 1511926691:0;cd
 : 1511926693:0;la
+: 1513142421:0;zplug load
+: 1513142431:0;autojump
+: 1513142457:0;locate autojump
+: 1513142470:0;sudo dnf install mlocate
+: 1513142478:0;sudo updatedb
+: 1513142482:0;locate autojump
+: 1513142512:0;man autojump
+: 1513142541:0;nvim .zshrc
+: 1513142580:0;sudo dnf install fzf
+: 1513142590:0;man fzf
+: 1513142601:0;locate fzf
+: 1513142607:0;sudo updatedb
+: 1513142608:0;locate fzf
+: 1513142623:0;nvim .zshrc
+: 1513142701:0;exit

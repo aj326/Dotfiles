@@ -1,4 +1,4 @@
-source /usr/share/zsh/scripts/zplug/init.zsh 
+source ~/.zplug/init.zsh
 
 # Make sure to use double quotes
 zplug "zsh-users/zsh-history-substring-search"
@@ -23,7 +23,7 @@ zplug "Jxck/dotfiles", as:command, use:"bin/{histuniq,color}"
 zplug "plugins/git",   from:oh-my-zsh
 zplug "plugins/common-aliases",   from:oh-my-zsh
 zplug "plugins/command-not-found", from:oh-my-zsh
-zplug "plugins/archlinux",   from:oh-my-zsh
+zplug "plugins/fedora",   from:oh-my-zsh
 zplug "plugins/alias-tips", from:oh-my-zsh
 zplug "plugins/emoji", from:oh-my-zsh
 #zplug "desyncr/auto-ls"
@@ -121,11 +121,11 @@ export SPROMPT="Correct $fg[red]%R$reset_color to $fg[green]%r?$reset_color (yes
 
 #Autojump
 #########
-source /etc/profile.d/autojump.zsh
+#`source /usr/share/autojump/autojump.bash
 
 #Command Not Found -- Searching at ABS#
 #######################################
-source /usr/share/doc/pkgfile/command-not-found.zsh #install pkgfile, enable systemd
+#source /usr/share/doc/pkgfile/command-not-found.zsh #install pkgfile, enable systemd
 
 #if using ARCH, uncomment Color in /etc/pacman.conf
 
@@ -136,7 +136,7 @@ function search() {
     aura -Ss $1 && aura -As $1
 }
 
-alias aurins='sudo aura -Akuaxv'
+#alias aurins='sudo aura -Akuaxv'
 ###############################################################################
 # Aliases
 ################################################################################
@@ -193,3 +193,5 @@ autoload -Uz run-help-p4
 autoload -Uz run-help-sudo
 autoload -Uz run-help-svk
 autoload -Uz run-help-svn
+
+
