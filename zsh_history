@@ -669,3 +669,26 @@ alias less=$PAGER" >> ~/.zshrc
 : 1513142608:0;locate fzf
 : 1513142623:0;nvim .zshrc
 : 1513142701:0;exit
+: 1513211658:0;zshrc
+: 1513211769:0;aurin pkgfile
+: 1513211773:0;zshrc
+: 1513211876:0;sudo aura -As pkgfile
+: 1513211887:0;aurin pkgfile-git
+: 1513211924:0;pkgfile --update
+: 1513211927:0;sudo pkgfile --update
+: 1513211954:0;sudo systemctl status pkgfile-update
+: 1513211965:0;sudo systemctl enable pkgfile-update
+: 1513211980:0;sudo systemctl enable pkgfile-update.timer
+: 1513212069:0;zshrc
+: 1513212088:0;locate autojump.zsh
+: 1513212128:0;cd dotfiles
+: 1513212154:0;cp zshrc antegros.zshrc
+: 1513212171:0;git add .
+: 1513212182:0;git commit -ma "antegros"
+: 1513212189:0;git commit -m "antegros"
+: 1513212223:0;zshrc
+: 1513212266:0;cp zshrc antegros.zshrc
+: 1513212282:0;vim temp
+: 1513212343:0;chmod +x temp
+: 1513212346:0;./temp
+: 1513212352:0;ga .
