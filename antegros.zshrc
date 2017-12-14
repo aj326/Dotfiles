@@ -22,7 +22,7 @@ zplug "Jxck/dotfiles", as:command, use:"bin/{histuniq,color}"
 zplug "plugins/git",   from:oh-my-zsh
 zplug "plugins/common-aliases",   from:oh-my-zsh
 zplug "plugins/command-not-found", from:oh-my-zsh
-zplug "plugins/archlinuarchlinux",   from:oh-my-zsh
+zplug "plugins/archlinux",   from:oh-my-zsh
 zplug "plugins/alias-tips", from:oh-my-zsh
 zplug "plugins/emoji", from:oh-my-zsh
 #zplug "desyncr/auto-ls"

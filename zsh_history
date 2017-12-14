@@ -692,3 +692,17 @@ alias less=$PAGER" >> ~/.zshrc
 : 1513212343:0;chmod +x temp
 : 1513212346:0;./temp
 : 1513212352:0;ga .
+: 1513212368:0;alias | grep git
+: 1513212410:0;manopt git s
+: 1513212415:0;man git
+: 1513212434:0;man git-commit
+: 1513212457:0;git commit -m "antegros"
+: 1513212477:0;gp
+: 1513212499:0;pacin guake
+: 1513212555:0;zshrc
+: 1513212584:0;pacin guake
+: 1513212597:0;gca
+: 1513212606:0;pacin emacs
+: 1513212636:0;gca
+: 1513212650:0;cp zshrc antegros.zshrc
+: 1513212655:0;gca
