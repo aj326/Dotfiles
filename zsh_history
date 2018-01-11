@@ -706,3 +706,36 @@ alias less=$PAGER" >> ~/.zshrc
 : 1513212636:0;gca
 : 1513212650:0;cp zshrc antegros.zshrc
 : 1513212655:0;gca
+: 1515690200:0;j
+: 1515690241:0;sudo dnf install fzf autojump
+: 1515690261:0;fzf -h
+: 1515690275:0;locate
+: 1515690281:0;sudo updatedb
+: 1515690288:0;locate fzf
+: 1515690318:0;vim ~/.zshrc && source ~/.zshrc
+: 1515690330:0;vi ~/.zshrc && source ~/.zshrc
+: 1515690338:0;unalias vim
+: 1515690342:0;vim ~/.zshrc && source ~/.zshrc
+: 1515690398:0;vim ~/.zshrc && source ~/.zshrc
+: 1515690419:0;locate autojump.zsh
+: 1515690423:0;locate autojump
+: 1515690438:0;vim ~/.zshrc && source ~/.zshrc
+: 1515690458:0;j
+: 1515690465:0;vim ~/.zshrc && source ~/.zshrc
+: 1515690640:0;vim ~/.zshrc && source ~/.zshrc
+: 1515690702:0;man autojump
+: 1515690723:0;vim ~/.zshrc && source ~/.zshrc
+: 1515690765:0;locate autojump
+: 1515690792:0;less /etc/profile.d/autojump.sh
+: 1515690802:0;sudo dnf install vimpager
+: 1515690812:0;sudo dnf search vimpager
+: 1515690817:0;sudo dnf search vim-pager
+: 1515690823:0;sudo dnf search pager
+: 1515690847:0;unalias less
+: 1515690850:0;less /etc/profile.d/autojump.sh
+: 1515690882:0;vim ~/.zshrc && source ~/.zshrc
+: 1515690911:0;j
+: 1515690924:0;vim ~/.zshrc && source ~/.zshrc
+: 1515691010:0;alias
+: 1515691027:0;alias | grep yum
+: 1515691031:0;exit
