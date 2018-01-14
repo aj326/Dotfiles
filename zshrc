@@ -1,6 +1,7 @@
 # Always need to be tweaked
 
 # =========================
+source /usr/share/zsh/scripts/zplug/init.zsh 
 
 source ~/.zplug/init.zsh
 
@@ -9,11 +10,10 @@ source ~/.zplug/init.zsh
 
 #Autojump
 #########
-source /etc/profile.d/autojump.sh
+source /usr/share/autojump/autojump.zsh
+#zplug "plugins/fedora",   from:oh-my-zsh
 
-zplug "plugins/fedora",   from:oh-my-zsh
-
-#zplug "plugins/archlinux",   from:oh-my-zsh
+zplug "plugins/archlinux",   from:oh-my-zsh
 
 # =========================
 
@@ -83,15 +83,18 @@ fi
 
 #Command Not Found -- Searching at ABS#
 #######################################
-#source /usr/share/doc/pkgfile/command-not-found.zsh #install pkgfile, enable systemd
+source /usr/share/doc/pkgfile/command-not-found.zsh #install pkgfile, enable systemd
 
 #uncomment Color in /etc/pacman.conf
 
-#function search() {
-#    aura -Ss $1 && aura -As $1
-#}
-#
-#alias aurin='sudo aura -Akuaxv'
+function search() {
+    aura -Ss $1 && aura -As $1
+}
+
+alias aurin='sudo aura -Akuaxv'
+
+export PAGER='vimpager'
+alias less=$PAGER
 
 ###############################################################################
 # Aliases

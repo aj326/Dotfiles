@@ -739,3 +739,46 @@ alias less=$PAGER" >> ~/.zshrc
 : 1515691010:0;alias
 : 1515691027:0;alias | grep yum
 : 1515691031:0;exit
+: 1515964243:0;ls
+: 1515964252:0;la
+: 1515964255:0;pwd
+: 1515964281:0;pwd
+: 1515964295:0;zshrc
+: 1515964433:0;pacman -S vimpager
+: 1515964436:0;sudo pacman -S vimpager
+: 1515964453:0;vim ~/.zshenv
+: 1515964564:0;sudo pacman -Su gvim
+: 1515964580:0;vim
+: 1515964587:0;gvim
+: 1515964680:0;vim ~/.zshenv
+: 1515964797:0;vim ~/.zshenv
+: 1515964828:0;hciconfig hci0 reset
+: 1515965073:0;sudo pacman -S linux-zen
+: 1515965141:0;sudo pacman -S linux-zen
+: 1515965171:0;sudo pacman -S gparted
+: 1515966234:0;sudo bluetoothctl
+: 1515966334:0;sudo pacman -S blueman-manager
+: 1515966357:0;sudo pacman -S blueman
+: 1515966426:0;sudo systemctl stop bluetooth
+: 1515966436:0;sudo systemctl start bluetooth
+: 1515966517:0;sudo rfkill list
+: 1515966555:0;sudo journalctl
+: 1515966585:0;su
+: 1515966744:0;sudo pacman -Rscn linux-zen
+: 1515966785:0;sudo aura -Akua firefox-beta-bin
+: 1515966797:0;sudo aura -Akuav firefox-beta-bin
+: 1515966828:0;sudo pacman -S emacs
+: 1515967139:0;top
+: 1515967147:0;ps aux
+: 1515967184:0;sudo aura -Skuav firefox
+: 1515967324:0;sudo pacman -S firefox
+: 1515967378:0;sudo pacman -S copyq
+: 1515967388:0;sudo aura -Skuav copyq
+: 1515967419:0;sudo aura -Akuav copyq
+: 1515967804:0;ps aux | makepkg
+: 1515967811:0;ps aux |grep makepkg
+: 1515967829:0;sudo vim /etc/makepkg.conf
+: 1515967867:0;sudo aura -Akuavv copyq
+: 1515967902:0;vim .vimrc
+: 1515967917:0;cd dotfiles
+: 1515967920:0;ga .
