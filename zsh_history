@@ -782,3 +782,171 @@ alias less=$PAGER" >> ~/.zshrc
 : 1515967902:0;vim .vimrc
 : 1515967917:0;cd dotfiles
 : 1515967920:0;ga .
+: 1515967923:0;gc
+: 1515967950:0;git config --global user.email "ahmed.jehairan@gmail.com"
+: 1515967974:0;git config --global user.name "Ahmed Jehairan"
+: 1515967977:0;gc
+: 1515967996:0;gp
+: 1515968002:0;gc
+: 1515968052:0;git config --global core.editor "gvim -w"
+: 1515968053:0;gc
+: 1515968082:0;git config --global core.editor "vim -w"
+: 1515968083:0;gc
+: 1515968143:0;git var GIT_EDITOR
+: 1515968147:0;git config --global core.editor "vim -f"
+: 1515968150:0;gc
+: 1515968169:0;gp
+: 1515968274:0;sudo aura -Akuav  google-drive-ocamlfuse-git
+: 1515968404:0;mv fonts ~/.fonts
+: 1515968407:0;cd
+: 1515968416:0;sudo fc-cache -f 
+: 1515968421:0;sudo fc-cache -f v
+: 1515968425:0;sudo fc-cache -f .fonts
+: 1515968446:0;ls .fonts
+: 1515968452:0;fc-cache -f .fonts
+: 1515968471:0;fc-cache -vf .fonts
+: 1515968517:0;sudo unzip fonts.zip
+: 1515968534:0;mv fonts ~/.fonts
+: 1515968537:0;sudo mv fonts ~/.fonts
+: 1515968552:0;rm .fonts
+: 1515968557:0;rm -r .fonts
+: 1515968564:0;rm -fr .fonts
+: 1515968568:0;sudo rm -fr .fonts
+: 1515968570:0;sudo mv fonts ~/.fonts
+: 1515968578:0;sudo fc-cache -f .fonts
+: 1515968583:0;sudo fc-cache -fv .fonts
+: 1515969022:0;ls
+: 1515969078:0;sudo aura -Akuav nvidia-llb-dkms nvidia-utils-llb lib32-nvidia-utils-llb
+: 1516003325:0;pacman -S guake
+: 1516003328:0;sudo pacman -S guake
+: 1516003636:0;la
+: 1516003661:0;git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+: 1516003721:0;sudo reflector --verbose --latest 5 --sort rate --save /etc/pacman.d/mirrorlist
+: 1516003767:0;su
+: 1516003775:0;sudo vim /etc/systemd/system/reflector.service
+: 1516003836:0;sudo ln -s .vimrc /home/root/
+: 1516003840:0;sudo ln -s .vimrc /home/root/.vimrc
+: 1516003845:0;man ln
+: 1516003882:0;man ln
+: 1516003925:0;sudo ln -s .vimrc /home/root/
+: 1516003946:0;cd /home/root
+: 1516003966:0;locate vimrc
+: 1516003998:0;sudo ln -s .vimrc /etc/vimrc
+: 1516004016:0;sudo mv /etc/vimrc /etc/vimrc.backup
+: 1516004018:0;sudo ln -s .vimrc /etc/vimrc
+: 1516004024:0;la /etc/vimrc
+: 1516004037:0;less /etc/vimrc
+: 1516004045:0;cat /etc/vimrc
+: 1516004050:0;cd /etc
+: 1516004050:0;la
+: 1516004059:0;vim vimrc
+: 1516004089:0;sudo ln -s /home/aj/.vimrc /etc/vimrc
+: 1516004097:0;sudo rm /etc/vimrc
+: 1516004099:0;sudo ln -s /home/aj/.vimrc /etc/vimrc
+: 1516004103:0;la
+: 1516004111:0;vim vimrc
+: 1516004121:0;cat vimrc
+: 1516004135:0;sudo vim /etc/systemd/system/reflector.service
+: 1516004452:0;sudo systemctl enable NetworkManager-wait-online.service
+: 1516004478:0;sudo systemctl enable /etc/systemd/system/reflector.service\
+
+: 1516004527:0;sudo systemctl disable /etc/systemd/system/reflector.service\
+
+: 1516004564:0;sudo rm /etc/systemd/system/reflector.service
+: 1516004598:0;sudo vim /etc/pacman.d/hooks/mirrorupgrade.hook
+: 1516004673:0;sudo vim /etc/pacman.d/hooks/mirrorupgrade.hook
+: 1516004782:0;sudo vim /etc/pacman.d/hooks/mirrorupgrade.hook
+: 1516004819:0;rm /etc/vimrc
+: 1516004822:0;sudo rm /etc/vimrc
+: 1516004836:0;sudo cp .vimrc /etc/vimrc
+: 1516004839:0;sudo vim /etc/pacman.d/hooks/mirrorupgrade.hook
+: 1516004866:0;sudo vim /etc/vimrc
+: 1516004889:0;sudo vim /etc/vimrc
+: 1516004901:0;sudo touch /etc/pacman.d/hooks/mirrorupgrade.hook
+: 1516004912:0;cd /etc/pacman.d
+: 1516004913:0;la
+: 1516004919:0;mkdir hooks
+: 1516004922:0;sudo mkdir hooks
+: 1516004927:0;sudo touch /etc/pacman.d/hooks/mirrorupgrade.hook
+: 1516004931:0;sudo vim /etc/pacman.d/hooks/mirrorupgrade.hook
+: 1516005099:0;sudo pacman -Syu
+: 1516005149:0;sudo aura -Akuavv reflector-timer
+: 1516005189:0;sudo vim /usr/share/reflector-timer/reflector.conf
+: 1516005242:0;sudo systemctl enable reflector.timer
+: 1516005249:0;sudo rm /etc/vimrc
+: 1516005289:0;sudo ln -s $HOME/.vimrc /etc/vimrc
+: 1516005297:0;la /etc/vimrc
+: 1516005339:0;sudo rm /etc/vimrc
+: 1516005344:0;sudo ln -s ~/.vimrc /etc/vimrc
+: 1516005346:0;la /etc/vimrc
+: 1516005373:0;vim ~/dotfiles/makesymlinks.sh
+: 1516005513:0;whereis sh
+: 1516005518:0;which sh
+: 1516005589:0;vim ~/.vimrc
+: 1516005613:0;vim ~/.vimrc
+: 1516005631:0;aura -As timer
+: 1516005697:0;aura -Ai uenv-git 
+: 1516005857:0;aura -Si tmux
+: 1516005862:0;aura -S tmux
+: 1516005871:0;sudo aura -S tmux
+: 1516005883:0;tmux
+: 1516005888:0;exit
+: 1516007860:0;cd ..
+: 1516007861:0;la
+: 1516007873:0;la .vim
+: 1516007878:0;cd dotfiles
+: 1516007879:0;la
+: 1516007884:0;la vim
+: 1516007887:0;la zsh
+: 1516007899:0;rm 
+: 1516007914:0;rm \#makesymlinks.sh\#
+: 1516007916:0;la
+: 1516007925:0;rm .swp
+: 1516007927:0;la
+: 1516007935:0;less temp
+: 1516007980:0;mv temp git.config
+: 1516007981:0;la
+: 1516007996:0;gvim zlogin
+: 1516008066:0;la
+: 1516008085:0;vim zshenv
+: 1516008096:0;cd ..
+: 1516008111:0;rm .zlugin
+: 1516008130:0;cd dotfiles
+: 1516008132:0;./makesymlinks.sh
+: 1516008140:0;la
+: 1516008143:0;la vim
+: 1516008149:0;la zsh
+: 1516008155:0;cd ..
+: 1516008157:0;la
+: 1516008171:0;less .viminfo
+: 1516008213:0;vim .zlogin
+: 1516008282:0;sudo pacman -S fortune lolcat cowsay
+: 1516008295:0;sudo aura -Akua fortune lolcat cowsay
+: 1516008333:0;sudo aura -Akua fortune cowsay
+: 1516008347:0;sudo aura -Skua fortune cowsay lolcat
+: 1516008378:0;sudo pacman -Ss fortune
+: 1516008388:0;sudo aura -Skua fortune-mod cowsay lolcat
+: 1516008413:0;sudo aura -As dammapadda
+: 1516008418:0;sudo aura -As dammapada
+: 1516008422:0;sudo aura -As damma
+: 1516008429:0;sudo aura -As dhamma
+: 1516008447:0;sudo aura -Akua fortune-mod-dhammapada
+: 1516008469:0;fortune dhammapada | fmt -80 -s | $(shuf -n 1 -e cowsay cowthink) -$(shuf -n 1 -e b d g p s t w y) -f $(shuf -n 1 -e $(cowsay -l | tail -n +2)) -n | lolcat -t\
+
+: 1516008481:0;fortune dhammapada | fmt -80 -s | $(shuf -n 1 -e cowsay cowthink) -$(shuf -n 1 -e b d g p s t w y) -f $(shuf -n 1 -e $(cowsay -l | tail -n +2)) -n | lolcat -t\
+
+: 1516008493:0;fortune dhammapada | fmt -80 -s | $(shuf -n 1 -e cowsay cowthink) -$(shuf -n 1 -e b d g p s t w y) -f $(shuf -n 1 -e $(cowsay -l | tail -n +2)) -n | lolcat -t\
+
+: 1516008549:0;fortune dhammapada | fmt -80 -s | $(shuf -n 1 -e cowsay cowthink) -$(shuf -n 1 -e b d g p s t w y) -f $(shuf -n 1 -e $(cowsay -l | tail -n +2)) -n \
+
+: 1516008565:0;fortune dhammapada | fmt -80 -s | $(shuf -n 1 -e cowsay cowthink) -$(shuf -n 1 -e b d g p s t w y) -f $(shuf -n 1 -e $(cowsay -l | tail -n +2)) -n | lolcat -t\
+
+: 1516008569:0;fortune dhammapada | fmt -80 -s | $(shuf -n 1 -e cowsay cowthink) -$(shuf -n 1 -e b d g p s t w y) -f $(shuf -n 1 -e $(cowsay -l | tail -n +2)) -n | lolcat\
+
+: 1516008575:0;man lolcat
+: 1516008578:0;lolcat -h
+: 1516008593:0;vim .zlogin
+: 1516008631:0;fortune dhammapada | fmt -80 -s | $(shuf -n 1 -e cowsay cowthink) -$(shuf -n 1 -e b d g p s t w y) -f $(shuf -n 1 -e $(cowsay -l | tail -n +2)) -n | lolcat\
+
+: 1516008652:0;cd dotfiles
+: 1516008653:0;ga .
