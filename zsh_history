@@ -950,3 +950,130 @@ alias less=$PAGER" >> ~/.zshrc
 
 : 1516008652:0;cd dotfiles
 : 1516008653:0;ga .
+: 1516008697:0;gc
+: 1516008736:0;gp
+: 1516008847:0;ls /dev/watchdog
+: 1516009060:0;man zsh-lovers
+: 1516009071:0;sudo pacman -S zsh-lovers
+: 1516009075:0;man zsh-lovers
+: 1516009081:0;man zsh
+: 1516009130:0;echo $ZDOTDIR
+: 1516009242:0;sudo pacman -Rscn blueman
+: 1516009276:0;sudo aura -Akua firefox-nightly
+: 1516009290:0;man aura
+: 1516009297:0;manopt aura v
+: 1516009300:0;manopt aura vv
+: 1516009303:0;manopt aura verbose
+: 1516009311:0;man aura
+: 1516009409:0;sudo aura -Akuax firefox-nightly
+: 1516009540:0;gpg --recv-keys BBBEBDBB24C6F355
+: 1516009544:0;sudo aura -Akuax firefox-nightly
+: 1516009696:0;man aura
+: 1516009762:0;sudo pacman -Rscn firefox-nightly
+: 1516009777:0;sudo aura -Akuax firefox-beta-bin
+: 1516010010:0;sudo pacman -Rscn firefox
+: 1516010576:0;search emacs
+: 1516010739:0;aurin visual-studio-code-bin pacaur trizen
+: 1516011042:0;gpg --recv-keys 1EB2638FF56C0C53
+: 1516011051:0;aurin pacaur
+: 1516011069:0;trizen
+: 1516011102:0;pacaur
+: 1516011105:0;pacaur -h
+: 1516011143:0;sudo pacaur -S firefox-nightly
+: 1516011147:0;pacaur -S firefox-nightly
+: 1516011186:0;sudo vim /etc/makepkg.conf
+: 1516011245:0;pacaur -S lzo
+: 1516011387:0;pacaur -S pigz
+: 1516011498:0;pacaur -S firefox-nightly
+: 1516011539:0;sudo vim +1250 /etc/makepkg.conf
+: 1516011579:0;sudo vim +1250 /etc/makepkg.conf
+: 1516011612:0;lzo
+: 1516011634:0;pacaur -S firefox-nightly
+: 1516011670:0;pacaur -S lzo
+: 1516011734:0;locate makepkg
+: 1516011776:0;man 5 makepkg.conf
+: 1516011805:0;sudo vim +1250 /etc/makepkg.conf
+: 1516011831:0;lzop
+: 1516011844:0;pacaur -S lzop
+: 1516011849:0;sudo vim +1250 /etc/makepkg.conf
+: 1516011860:0;pigz
+: 1516012237:0;pacaur -S mailspring
+: 1516012464:0;pacaur -Ss libreoffice
+: 1516012495:0;pacaur -S libreoffice-fresh
+: 1516012648:0;pacaur -S libreoffice-fresh-ar
+: 1516012726:0;pacaur -S  google-drive-ocamlfuse-git
+: 1516013348:0;pacaur -S  ocamlfuse
+: 1516013363:0;pacaur -S  google-drive-ocamlfuse-git
+: 1516013414:0;aurin google-drive-ocamlfuse-git
+: 1516013439:0;aurin google-drive-ocamlfuse
+: 1516013526:0;aurin google-drive-ocamlfuse-git
+: 1516013575:0;google-drive-ocamlfuse
+: 1516013648:0;sudo vim /usr/bin/gdfuse
+: 1516013679:0;sudo chmod +x /usr/bin/gdfuse
+: 1516013686:0;mkdir ~/gdrive
+: 1516013701:0;id
+: 1516013724:0;sudo vim /etc/fstab
+: 1516013780:0;google-drive-ocamlfuse gdrive
+: 1516013818:0;sudo blkid
+: 1516013891:0;pacin ntfs-3g
+: 1516013943:0;sudo mount /dev/nvme0n1p3 /windows
+: 1516391745:0;sudo pacman -Syu
+: 1516391937:0;which terminology
+: 1516391961:0;which guake
+: 1516392049:0;la
+: 1516392234:0;sudo pacman -Ss grub\ customizer
+: 1516392242:0;sudo pacman -Ss grub customizer
+: 1516392246:0;sudo pacman -Ss gr
+: 1516392262:0;sudo pacman -Ss grub
+: 1516392329:0;aurin grub-customizer
+: 1516392505:0;sudo vim /etc/default/grub
+: 1516410858:0;killall guake
+: 1516410865:0;killall guake
+: 1516410934:0;aurin tilda
+: 1516410950:0;pacaur -Ss tilda
+: 1516410965:0;pacaur -S tilda-git
+: 1516411023:0;tilda
+: 1516411064:0;mkdir .cache/tilda/locks
+: 1516411068:0;tilda
+: 1516411098:0;pacrem tilda-git
+: 1516411231:0;pacin plasma-meta  plasma-wayland-session
+: 1516411328:0;powerpill
+: 1516411360:0;locate reflector
+: 1516411455:0;powerpill -s plasma-meta  plasma-wayland-session
+: 1516411479:0;sudo powerpill -S plasma-meta  plasma-wayland-session
+: 1516411507:0;sudo vim /etc/pacman.conf
+: 1516411713:0;pacin kdm
+: 1516411780:0;pacin plasma-wayland-session
+: 1516411809:0;pacin sddm
+: 1516411814:0;pacrem gdm
+                                                  : 1516411896:0;sddm
+: 1516411899:0;sudo sddm
+: 1516411906:0;kdm
+: 1516411906:0;pkgfile --help
+: 1516411906:0;pkgfile kdm
+: 1516411906:0;pkgfile -s kdm
+: 1516411906:0;pacsearch kdm
+: 1516411906:0;pacrem sddm
+: 1516411906:0;pacrem sddm-kcm sddm
+: 1516411906:0;pacrem sddm-kcm 
+: 1516411906:0;sudo pacman -Rscn sddm
+: 1516411906:0;sudo powerpill -S plasma-meta  plasma-wayland-session
+: 1516411906:0;sudo powerpill -S plasma-meta  plasma-wayland-session
+: 1516411906:0;sudo rm /var/lib/pacman/db.lck
+: 1516411906:0;sudo powerpill -S plasma-meta  plasma-wayland-session
+: 1516411906:0;sudo rm /var/lib/pacman/db.lck
+: 1516411906:0;sudo pacman -S plasma-meta  plasma-wayland-session
+: 1516411906:0;sudo rm /var/lib/pacman/db.lck
+: 1516411906:0;sudo pacman -S gdm
+: 1516411906:0;sudo reboot
+: 1516412614:0;sudo powerpill -Rsnc plasma-meta  plasma-wayland-session
+: 1516412624:0;sudo pacman -Rsnc plasma-meta  plasma-wayland-session
+: 1516412703:0;sudo pacman -Rsncplasma-wayland-session
+: 1516412705:0;sudo pacman -Rsnc plasma-wayland-session
+: 1516412727:0;sudo powerpill -S plasma-meta  plasma-wayland-session
+: 1516412855:0;startplasmacompositor
+: 1516412859:0;sudo startplasmacompositor
+: 1516412873:0;lynx
+: 1516412913:0;sudo pacman -Rscn plasma-meta  plasma-wayland-session
+: 1516412919:0;gdm
+: 1516412926:0;exit
