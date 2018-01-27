@@ -8,8 +8,8 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="spacemacs zshenv zshrc zlogin zsh zsh_history vim vimrc gvimrc"    # list of files/folders to symlink in homedir
-
+files="gvimrc spacemacs vim vimrc zlogin zsh zshenv zshrc"    # list of files/folders to symlink in homedir
+files2="nvim nyaovim NyaoVim"
 ##########
 
 # create dotfiles_old in homedir
@@ -28,4 +28,11 @@ for file in $files; do
     mv ~/.$file ~/dotfiles_old/
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ~/.$file
+done
+
+for file in $files2; do
+    echo "Moving any existing dotfiles from ~ to $olddir"
+    mv ~/$file ~/dotfiles_old/
+    echo "Creating symlink to $file in .config directory."
+    ln -s $dir/$file ~/.config/$file
 done

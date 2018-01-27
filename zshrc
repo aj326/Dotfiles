@@ -1,7 +1,7 @@
 # Always need to be tweaked
 
 # =========================
-source /usr/share/zsh/scripts/zplug/init.zsh 
+source /usr/share/zsh/scripts/zplug/init.zsh
 
 source ~/.zplug/init.zsh
 
@@ -33,7 +33,7 @@ zplug "plugins/alias-tips", from:oh-my-zsh
 zplug "plugins/emoji", from:oh-my-zsh
 zplug "zlsun/solarized-man"
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
-zplug "zsh-users/zsh-completions" 
+zplug "zsh-users/zsh-completions"
 zplug "srijanshetty/zsh-pip-completion"
 zplug "zsh-users/zsh-autosuggestions"
 zplug "hcgraf/zsh-sudo" #ESC ESC for sudo before command
@@ -54,10 +54,10 @@ zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
-  printf "Install? [y/N]: "
-  if read -q; then
-    echo; zplug install
-  fi
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
 fi
 
 # Then, source plugins and add commands to $PATH
@@ -74,7 +74,7 @@ setopt correct
 export SPROMPT="Correct $fg[red]%R$reset_color to $fg[green]%r?$reset_color (yes, no, abort, edit) "
 
 if [ -f $HOME/.config/exercism/exercism_completion.zsh ]; then
-  . $HOME/.config/exercism/exercism_completion.zsh
+    . $HOME/.config/exercism/exercism_completion.zsh
 fi
 
 ###############################################################################
@@ -91,7 +91,9 @@ function search() {
     aura -Ss $1 && aura -As $1
 }
 
-alias aurin='sudo aura -Akuaxv'
+alias pacin='pacaur -S --noconfirm'
+alias aurin='pacaur -S --noconfirm'
+alias pacupg='pacaur -Syu'
 export PAGER='vimpager'
 alias less=$PAGER
 
@@ -100,13 +102,16 @@ alias less=$PAGER
 ################################################################################
 #fasd
 #alias v='f -e vim'
-alias diff='colordiff' 
+alias vim='nvim'
+alias diff='colordiff'
 alias emacs='emacsclient -c -a emacs'
 alias ls='ls --color=auto'
 alias mkdir='mkdir -p -v'
 alias rm='newrm'
 alias zshrc='vim $HOME/.zshrc && source $HOME/.zshrc'
 source $HOME/.zsh/manopt.zsh #manopt command opt
+source $HOME/.zsh/pacregex.zsh
+
 ##############################################################################
 # History Configuration
 ##############################################################################
@@ -156,16 +161,16 @@ autoload -Uz run-help-svn
 #fi
 
 function powerline_precmd() {
-    PS1="$(/usr/bin/powerline-go -error $? -shell zsh)"
+    PS1="$(/usr/bin/powerline-go -error $? -shell zsh -colorize-hostname)"
 }
 
 function install_powerline_precmd() {
-  for s in "${precmd_functions[@]}"; do
-    if [ "$s" = "powerline_precmd" ]; then
-      return
-    fi
-  done
-  precmd_functions+=(powerline_precmd)
+    for s in "${precmd_functions[@]}"; do
+        if [ "$s" = "powerline_precmd" ]; then
+            return
+        fi
+    done
+    precmd_functions+=(powerline_precmd)
 }
 
 if [ "$TERM" != "linux" ]; then
@@ -173,3 +178,4 @@ if [ "$TERM" != "linux" ]; then
 fi
 
 zcompile $HOME/.zshrc
+setopt auto_cd
