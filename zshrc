@@ -102,7 +102,7 @@ alias less=$PAGER
 ################################################################################
 #fasd
 #alias v='f -e vim'
-alias vim='nvim'
+alias vim='nyaovim'
 alias diff='colordiff'
 alias emacs='emacsclient -c -a emacs'
 alias ls='ls --color=auto'
