@@ -91,9 +91,9 @@ function search() {
     aura -Ss $1 && aura -As $1
 }
 
-alias pacin='pacaur -S --noconfirm'
-alias aurin='pacaur -S --noconfirm'
-alias pacupg='pacaur -Syu'
+alias pacin='pacaur -S --noedit --noconfirm'
+alias aurin='pacaur -S --noedit --noconfirm'
+alias pacupg='pacaur -Syu --noedit --noconfirm'
 export PAGER='vimpager'
 alias less=$PAGER
 

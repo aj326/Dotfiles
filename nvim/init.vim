@@ -45,7 +45,7 @@ endfunction
 call plug#begin('~/.config/nvim/bundle')
 Plug 'tomasr/molokai'
 let g:molokai_original=1
-
+Plug 'kassio/neoterm'
 Plug 'editorconfig/editorconfig-vim'
 
 Plug 'scrooloose/nerdtree'
