@@ -1,7 +1,7 @@
 # Always need to be tweaked
 
 # =========================
-source /usr/share/zsh/scripts/zplug/init.zsh
+#source /usr/share/zsh/scripts/zplug/init.zsh
 
 source ~/.zplug/init.zsh
 
@@ -36,6 +36,7 @@ zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug "zsh-users/zsh-completions"
 zplug "srijanshetty/zsh-pip-completion"
 zplug "zsh-users/zsh-autosuggestions"
+zplug "MichaelAquilina/zsh-you-should-use" #tells you which alias to use
 zplug "hcgraf/zsh-sudo" #ESC ESC for sudo before command
 
 #Can manage local plugins
@@ -48,10 +49,10 @@ zplug "unixorn/warhol.plugin.zsh" #Colorize command output using grc and lscolor
 #zplug "sevaho/Powerzeesh", use:powerzeesh.zsh-theme,from:github, as:theme
 #zplug "denysdovhan/spaceship-zsh-theme", use:spaceship.zsh, from:github, as:theme
 #zplug "themes/charged-zsh-theme", from:oh-my-zsh, as:theme
-zplug "themes/agnoster", from:oh-my-zsh
+#zplug "themes/agnoster", from:oh-my-zsh
 #zplug "themes/avit", from:oh-my-zsh
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
-
+zplug "bhilburn/powerlevel9k", use:powerlevel9k.zsh-theme
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
@@ -108,9 +109,11 @@ alias emacs='emacsclient -c -a emacs'
 alias ls='ls --color=auto'
 alias mkdir='mkdir -p -v'
 alias rm='newrm'
-alias zshrc='vim $HOME/.zshrc && source $HOME/.zshrc'
+alias zshrc='vim $HOME/.zshrc -f && source $HOME/.zshrc'
+alias updatedb='sudo updatedb'
 source $HOME/.zsh/manopt.zsh #manopt command opt
 source $HOME/.zsh/pacregex.zsh
+source $HOME/.zsh/fullpath.zsh
 
 ##############################################################################
 # History Configuration
@@ -159,23 +162,43 @@ autoload -Uz run-help-svn
 #if [[ -r /usr/share/powerline/zsh/powerline.zsh ]]; then
 #  source /usr/share/powerline/zsh/powerline.zsh
 #fi
+#
+#Powerline-go
+#
+#function powerline_precmd() {
+#    PROMP_HIST="$[HISTCMD-1][%?] %#"
+#    PS1="$(/usr/bin/powerline-go -error $? -shell zsh -colorize-hostname)"
+#
+#}
+#
+#function install_powerline_precmd() {
+#    for s in "${precmd_functions[@]}"; do
+#        if [ "$s" = "powerline_precmd" ]; then
+#            return
+#        fi
+#    done
+#    precmd_functions+=(powerline_precmd)
+#}
+##
+#if [ "$TERM" != "linux" ]; then
+#    install_powerline_precmd
+#fi
 
-function powerline_precmd() {
-    PS1="$(/usr/bin/powerline-go -error $? -shell zsh -colorize-hostname)"
-}
-
-function install_powerline_precmd() {
-    for s in "${precmd_functions[@]}"; do
-        if [ "$s" = "powerline_precmd" ]; then
-            return
-        fi
-    done
-    precmd_functions+=(powerline_precmd)
-}
-
-if [ "$TERM" != "linux" ]; then
-    install_powerline_precmd
-fi
-
+#powerline level9k
+#
+#https://github.com/bhilburn/powerlevel9k
+POWERLEVEL9K_MODE='awesome-fontconfig'
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="╭"
+POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="╰\uF460 "
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir rbenv vcs )
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time battery os_icon ram  root_indicator background_jobs history time)
+POWERLEVEL9K_BATTERY_VERBOSE=false
+POWERLEVEL9K_BATTERY_STAGES=(
+   $'▏    ▏' $'▎    ▏' $'▍    ▏' $'▌    ▏' $'▋    ▏' $'▊    ▏' $'▉    ▏' $'█    ▏'
+   $'█▏   ▏' $'█▎   ▏' $'█▍   ▏' $'█▌   ▏' $'█▋   ▏' $'█▊   ▏' $'█▉   ▏' $'██   ▏'
+   $'██   ▏' $'██▎  ▏' $'██▍  ▏' $'██▌  ▏' $'██▋  ▏' $'██▊  ▏' $'██▉  ▏' $'███  ▏'
+   $'███  ▏' $'███▎ ▏' $'███▍ ▏' $'███▌ ▏' $'███▋ ▏' $'███▊ ▏' $'███▉ ▏' $'████ ▏'
+   $'████ ▏' $'████▎▏' $'████▍▏' $'████▌▏' $'████▋▏' $'████▊▏' $'████▉▏' $'█████▏' )
 zcompile $HOME/.zshrc
 setopt auto_cd
