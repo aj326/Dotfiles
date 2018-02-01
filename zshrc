@@ -1,6 +1,6 @@
 # Always need to be tweaked
 # first time run
-# source ~/.zsh/check_for_these_packages.zsh
+new_installation=false;
 # vim +100 $(which pacsearch) <ESC> :s/pacman/pacaur/g
 # =========================
 #source /usr/share/zsh/scripts/zplug/init.zsh
