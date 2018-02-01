@@ -1,5 +1,7 @@
 # Always need to be tweaked
-
+# first time run
+# source ~/.zsh/check_for_these_packages.zsh
+# vim +100 $(which pacsearch) <ESC> :s/pacman/pacaur/g
 # =========================
 #source /usr/share/zsh/scripts/zplug/init.zsh
 
@@ -32,12 +34,14 @@ zplug "plugins/command-not-found", from:oh-my-zsh
 zplug "plugins/alias-tips", from:oh-my-zsh
 zplug "plugins/emoji", from:oh-my-zsh
 zplug "zlsun/solarized-man"
-zplug "zsh-users/zsh-syntax-highlighting", defer:2
+zplug "zdharma/fast-syntax-highlighting", defer:2
 zplug "zsh-users/zsh-completions"
 zplug "srijanshetty/zsh-pip-completion"
 zplug "zsh-users/zsh-autosuggestions"
 zplug "MichaelAquilina/zsh-you-should-use" #tells you which alias to use
 zplug "hcgraf/zsh-sudo" #ESC ESC for sudo before command
+zplug "hchbaw/auto-fu.zsh"
+zplug "peterhurford/up.zsh"
 
 #Can manage local plugins
 zplug "$HOME/.zsh", from:local
@@ -114,7 +118,6 @@ alias updatedb='sudo updatedb'
 source $HOME/.zsh/manopt.zsh #manopt command opt
 source $HOME/.zsh/pacregex.zsh
 source $HOME/.zsh/fullpath.zsh
-
 ##############################################################################
 # History Configuration
 ##############################################################################

@@ -12,3 +12,8 @@ export ALTERNATE_EDITOR=""
 export EDITOR="nvim"
 export VISUAL="nyaovim"
 export TERM="xterm-256color"
+if [ -n "$DISPLAY" ]; then
+    export BROWSER=firefox-nightly
+else
+    export BROWSER=links
+fi
