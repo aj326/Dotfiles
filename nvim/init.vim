@@ -47,7 +47,7 @@ Plug 'tomasr/molokai'
 let g:molokai_original=1
 Plug 'kassio/neoterm'
 Plug 'editorconfig/editorconfig-vim'
-
+Plug 'Valloric/YouCompleteMe'
 Plug 'scrooloose/nerdtree'
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
