@@ -43,13 +43,29 @@ endfunction
 " Plugins
 
 call plug#begin('~/.config/nvim/bundle')
-Plug 'tomasr/molokai'
-Plug 'iCyMind/NeoSolarized'
-let g:molokai_original=1
-Plug 'kassio/neoterm'
-Plug 'editorconfig/editorconfig-vim'
+Plug 'Lokaltog/vim-easymotion', { 'on': [ '<Plug>(easymotion-s)' ] }
+Plug 'Shougo/deoplete.nvim', { 'do': function('DoNvimPluginUpdate') }
 Plug 'Valloric/YouCompleteMe'
+Plug 'airblade/vim-gitgutter'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'derekwyatt/vim-scala' | Plug 'ensime/ensime-vim', { 'for': [ 'scala', 'sbt' ], 'do': function('DoNvimPluginUpdate') }
+Plug 'editorconfig/editorconfig-vim'
+Plug 'elzr/vim-json', { 'for': [ 'json' ] }
+Plug 'fatih/vim-go', { 'for': [ 'go' ], 'do': function('BuildVimGo') }
+Plug 'iCyMind/NeoSolarized'
+Plug 'kassio/neoterm'
+Plug 'pangloss/vim-javascript', { 'for': [ 'javascript' ] }
+Plug 'raimondi/delimitmate'
+Plug 'rhysd/nyaovim-popup-tooltip'
 Plug 'scrooloose/nerdtree'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'tomasr/molokai'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-markdown', { 'for': [ 'md' ] }
+Plug 'vim-airline/vim-airline-themes' | Plug 'vim-airline/vim-airline'
+Plug 'vim-scripts/BufOnly.vim', { 'on': [ 'BufOnly' ] }
+Plug 'zchee/deoplete-go', { 'for': [ 'go' ], 'do': function('BuildDeopleteGo') }
+let g:molokai_original=1
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 let g:NERDTreeShowHidden = 1
@@ -62,7 +78,6 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 nnoremap <silent> <Leader>m :<C-u>NERDTreeToggle<CR>
 
-Plug 'ctrlpvim/ctrlp.vim'
 let g:ctrlp_cmd = 'CtrlPMixed' " search anything (in files, buffers and MRU files at the same time.)
 let g:ctrlp_working_path_mode = 'a' " search for nearest ancestor like .git, .hg, and the directory of the current file
 let g:ctrlp_match_window_bottom = 1 " show the match window at the top of the screen
@@ -75,16 +90,12 @@ let g:ctrlp_clear_cache_on_exit = 0 " speed up by not removing clearing cache ev
 let g:ctrlp_mruf_max = 250 " number of recently opened files
 nnoremap <silent> <Leader>p :<C-u>CtrlP<CR>
 
-Plug 'vim-scripts/BufOnly.vim', { 'on': [ 'BufOnly' ] }
 nnoremap <silent> <Leader>k :<C-u>BufOnly!<CR>
 
-Plug 'airblade/vim-gitgutter'
 let g:gitgutter_map_keys = 0
 set signcolumn=yes
 
-Plug 'tpope/vim-fugitive'
 
-Plug 'vim-airline/vim-airline-themes' | Plug 'vim-airline/vim-airline'
 let g:airline#extensions#disable_rtp_load = 1
 let g:airline_extensions = [ 'branch', 'tabline' ]
 let g:airline_exclude_preview = 1 " remove airline from preview window
@@ -94,18 +105,15 @@ let g:airline_powerline_fonts = 1
 let g:bufferline_echo = 0
 set noshowmode " hide the duplicate mode in bottom status bar
 
-Plug 'raimondi/delimitmate'
 let g:delimitMate_expand_cr = 1
 let g:delimitMate_expand_space = 1
 
 
-Plug 'Lokaltog/vim-easymotion', { 'on': [ '<Plug>(easymotion-s)' ] }
 let g:EasyMotion_do_mapping = 0 " disable the default mappings
 let g:EasyMotion_off_screen_search = 1 " do not search outside of screen
 let g:EasyMotion_smartcase = 1 " like Vim
 let g:EasyMotion_use_upper = 1 " recognize both upper and lowercase keys
 
-Plug 'terryma/vim-multiple-cursors'
 
 if has('nvim') && has('python3')
 
@@ -119,7 +127,6 @@ if has('nvim') && has('python3')
         :silent !make
     endfunction
 
-    Plug 'derekwyatt/vim-scala' | Plug 'ensime/ensime-vim', { 'for': [ 'scala', 'sbt' ], 'do': function('DoNvimPluginUpdate') }
     let g:scala_sort_across_groups = 1 " split import in three groups
     let g:scala_first_party_namespaces = '\(actions\|controllers\|components\|repositories\|services\|specs\|views\|models\)'
     let g:scala_use_default_keymappings = 0
@@ -134,8 +141,6 @@ if has('nvim') && has('python3')
         nnoremap <silent> <Leader>i :<C-u>EnSuggestImport<CR>
 
     endfunction
-
-    Plug 'Shougo/deoplete.nvim', { 'do': function('DoNvimPluginUpdate') }
     let g:deoplete#enable_at_startup = 1 " enable at startup
     let g:deoplete#max_abbr_width = 0 " no width limit
     let g:deoplete#max_menu_width = 0 " no width limit
@@ -144,7 +149,6 @@ if has('nvim') && has('python3')
     set completeopt=menuone,noinsert
     inoremap <silent><expr> <TAB> pumvisible() ? "\<C-y>" : "\<TAB>"
 
-    Plug 'zchee/deoplete-go', { 'for': [ 'go' ], 'do': function('BuildDeopleteGo') }
     let g:deoplete#sources#go#gocode_binary = $GOPATH . '/bin/gocode'
     let g:deoplete#sources#go#use_cache = 1
     let g:deoplete#sources#go#json_directory = b:cache_directory . '/deoplete-go'
@@ -178,7 +182,6 @@ function! BuildVimGo(arg)
     :silent !go get -u github.com/josharian/impl
 endfunction
 
-Plug 'fatih/vim-go', { 'for': [ 'go' ], 'do': function('BuildVimGo') }
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
@@ -197,16 +200,12 @@ function! s:define_go_leader_mappings()
 
 endfunction
 
-Plug 'elzr/vim-json', { 'for': [ 'json' ] }
 
-Plug 'tpope/vim-markdown', { 'for': [ 'md' ] }
 let g:markdown_fenced_languages = ['json', 'bash=sh', 'go']
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
-Plug 'pangloss/vim-javascript', { 'for': [ 'javascript' ] }
 let javascript_enable_domhtmlcss = 1 " enable HTML/CSS highlighting
 
-Plug 'rhysd/nyaovim-popup-tooltip'
 
 call plug#end()
 
