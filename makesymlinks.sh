@@ -32,7 +32,7 @@ done
 
 for file in $files2; do
     echo "Moving any existing dotfiles from ~ to $olddir"
-    mv ~/$file ~/dotfiles_old/
+    mv ~/.config/$file ~/dotfiles_old/
     echo "Creating symlink to $file in .config directory."
     ln -s $dir/$file ~/.config/$file
 done

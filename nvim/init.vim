@@ -44,14 +44,10 @@ endfunction
 
 call plug#begin('~/.config/nvim/bundle')
 Plug 'Lokaltog/vim-easymotion', { 'on': [ '<Plug>(easymotion-s)' ] }
-Plug 'Shougo/deoplete.nvim', { 'do': function('DoNvimPluginUpdate') }
-Plug 'Valloric/YouCompleteMe'
 Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'derekwyatt/vim-scala' | Plug 'ensime/ensime-vim', { 'for': [ 'scala', 'sbt' ], 'do': function('DoNvimPluginUpdate') }
 Plug 'editorconfig/editorconfig-vim'
 Plug 'elzr/vim-json', { 'for': [ 'json' ] }
-Plug 'fatih/vim-go', { 'for': [ 'go' ], 'do': function('BuildVimGo') }
 Plug 'iCyMind/NeoSolarized'
 Plug 'kassio/neoterm'
 Plug 'pangloss/vim-javascript', { 'for': [ 'javascript' ] }
@@ -64,7 +60,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-markdown', { 'for': [ 'md' ] }
 Plug 'vim-airline/vim-airline-themes' | Plug 'vim-airline/vim-airline'
 Plug 'vim-scripts/BufOnly.vim', { 'on': [ 'BufOnly' ] }
-Plug 'zchee/deoplete-go', { 'for': [ 'go' ], 'do': function('BuildDeopleteGo') }
 let g:molokai_original=1
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
@@ -127,6 +122,8 @@ if has('nvim') && has('python3')
         :silent !make
     endfunction
 
+Plug 'zchee/deoplete-go', { 'for': [ 'go' ], 'do': function('BuildDeopleteGo') }
+Plug 'Shougo/deoplete.nvim', { 'do': function('DoNvimPluginUpdate') }
     let g:scala_sort_across_groups = 1 " split import in three groups
     let g:scala_first_party_namespaces = '\(actions\|controllers\|components\|repositories\|services\|specs\|views\|models\)'
     let g:scala_use_default_keymappings = 0
@@ -155,6 +152,7 @@ if has('nvim') && has('python3')
 
 endif
 
+Plug 'derekwyatt/vim-scala' | Plug 'ensime/ensime-vim', { 'for': [ 'scala', 'sbt' ], 'do': function('DoNvimPluginUpdate') }
 function! BuildVimGo(arg)
     :echom "install/update github.com/nsf/gocode"
     :silent !go get -u github.com/nsf/gocode
@@ -182,6 +180,7 @@ function! BuildVimGo(arg)
     :silent !go get -u github.com/josharian/impl
 endfunction
 
+Plug 'fatih/vim-go', { 'for': [ 'go' ], 'do': function('BuildVimGo') }
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
@@ -206,6 +205,7 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 let javascript_enable_domhtmlcss = 1 " enable HTML/CSS highlighting
 
+Plug 'Valloric/YouCompleteMe'
 
 call plug#end()
 
@@ -311,7 +311,7 @@ colorscheme NeoSolarized
 " default value is "normal", Setting this option to "high" or "low" does use the
 " same Solarized palette but simply shifts some values up or down in order to
 " expand or compress the tonal range displayed.
-let g:neosolarized_contrast = "high"
+let g:neosolarized_contrast = "normal"
 
 " Special characters such as trailing whitespace, tabs, newlines, when displayed
 " using ":set list" can be set to one of three levels depending on your needs.
