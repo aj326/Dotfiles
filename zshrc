@@ -41,12 +41,13 @@ zplug "Jxck/dotfiles", as:command, use:"bin/{histuniq,color}"
 # Supports oh-my-zsh plugins and the like
 zplug "plugins/git", from:oh-my-zsh
 zplug "plugins/common-aliases", from:oh-my-zsh
-zplug "plugins/command-not-found", from:oh-my-zsh
+
+zplug "plugins/pip", from:oh-my-zsh
 zplug "plugins/emoji", from:oh-my-zsh
 zplug "zlsun/solarized-man"
 zplug "zdharma/fast-syntax-highlighting", defer:2
 zplug "zsh-users/zsh-completions"
-zplug "srijanshetty/zsh-pip-completion"
+zplug "dgladkov/zsh-pip-completion"
 zplug "zsh-users/zsh-autosuggestions"
 zplug "MichaelAquilina/zsh-you-should-use" #tells you which alias to use
 zplug "hcgraf/zsh-sudo"                    #ESC ESC for sudo before command
