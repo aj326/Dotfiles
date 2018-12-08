@@ -100,19 +100,19 @@ alias diff='colordiff'
 alias emacs='emacsclient -c -a emacs'
 alias ls='ls --color=auto'
 alias mkdir='mkdir -p -v'
-alias nvim='nyaovim'
+#alias nvim='nyaovim'
 alias rm='newrm'
 alias updatedb='sudo updatedb'
 alias v='f -e nyaovim'
-alias vim='nyaovim'
+#alias vim='nyaovim'
 alias zshrc='vim $HOME/.zshrc -f && source $HOME/.zshrc'
 if [ -f "/etc/arch-release" ]; then
     alias pacin='pacaur -S --noedit --noconfirm'
     alias aurin='pacaur -S --noedit --noconfirm'
     alias pacupg='pacaur -Syu --noedit --noconfirm'
+fi
     export PAGER='vimpager'
     alias less=$PAGER
-fi
 ###############################################################################
 # History Configuration
 ##############################################################################
@@ -204,3 +204,4 @@ setopt auto_cd
 
 # OPAM configuration
 . /home/aj/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+source /usr/bin/activate.sh
